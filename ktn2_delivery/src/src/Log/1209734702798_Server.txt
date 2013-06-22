@@ -1,0 +1,984 @@
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Timestamp        Logging Entity           Source                   Destination              Seq No  Flag    Ack No  Start Payload            Checksum    Comment                                           
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+15:25:3.410      AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:3.412      CLSocket::receive                                                                                                                       Receiving at:10500                                
+15:25:9.82       CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 10500
+Remote Port:34912
+15:25:9.123      CLSocket::receive                                                                                                                       Finished receiving at:10500                       
+15:25:9.124      AbstractConnection       127.0.1.1:9999           127.0.0.1:10500          7442    SYN     -1                               0           Processing packet.                                
+15:25:9.124      AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6706    SYNACK  7442                             0           Sending Ack: 7442                                 
+15:25:9.139      NETWORK                                                                                                                                 Packet 6706 send!                                 
+15:25:9.139      AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:9.156      CLSocket::receive                                                                                                                       Receiving at:10500                                
+15:25:9.156      CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:25:9.158      CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 10500
+Remote Port:48966
+15:25:9.159      CLSocket::receive                                                                                                                       Finished receiving at:10500                       
+15:25:9.160      AbstractConnection       127.0.1.1:9999           127.0.1.1:10500          7443    ACK     6706                             0           Processing packet.                                
+15:25:9.161      AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:9.162      CLSocket::receive                                                                                                                       Receiving at:62532                                
+15:25:9.169      CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 62532
+Remote Port:53368
+15:25:9.220      CLSocket::receive                                                                                                                       Finished receiving at:62532                       
+15:25:9.267      AbstractConnection       127.0.1.1:9999           127.0.0.1:62532          7444            -1      Hello:default            215245029   Processing packet.                                
+15:25:9.268      AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6919    ACK     7444                             0           Sending Ack: 7444                                 
+15:25:9.278      NETWORK                                                                                                                                 Packet 6919 send!                                 
+15:25:9.278      AbstractConnection       127.0.1.1:9999           127.0.0.1:62532          7444            -1      Hello:default            215245029   Packet successfully received.                     
+15:25:9.279      AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6920    ACK     7444                             0           Sending Ack: 7444                                 
+15:25:9.281      NETWORK                                                                                                                                 Packet 6920 send!                                 
+15:25:9.362      AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:9.364      SendTimer                127.0.1.1:62532          127.0.1.1:9999           6921            -1      *: default joined.       237488121   Sending this datagram (try: 1)                    
+15:25:9.366      CLSocket::receive                                                                                                                       Receiving at:62532                                
+15:25:9.367      CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:25:9.381      CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 62532
+Remote Port:56224
+15:25:9.381      NETWORK                                                                                                                                 Packet 6921 send!                                 
+15:25:9.384      CLSocket::receive                                                                                                                       Finished receiving at:62532                       
+15:25:9.385      AbstractConnection       127.0.1.1:9999           127.0.1.1:62532          7445    ACK     6921                             0           Processing packet.                                
+15:25:9.385      AbstractConnection       127.0.1.1:9999           127.0.1.1:62532          7445    ACK     6921                             0           Received Ack for sequence number: 6921            
+15:25:9.394      AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:9.394      CLSocket::receive                                                                                                                       Receiving at:62532                                
+15:25:9.395      CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:25:9.396      CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 62532
+Remote Port:56225
+15:25:9.397      CLSocket::receive                                                                                                                       Finished receiving at:62532                       
+15:25:9.397      AbstractConnection       127.0.1.1:9999           127.0.1.1:62532          7446    ACK     6921                             0           Processing packet.                                
+15:25:9.397      AbstractConnection       127.0.1.1:9999           127.0.1.1:62532          7446    ACK     6921                             0           ERROR! Received Ack with wrong ackno.: 6921. Packet discarded!
+15:25:9.475      SendTimer                127.0.1.1:62532          127.0.1.1:9999           6922            -1      [default]                1927854161  Sending this datagram (try: 1)                    
+15:25:9.482      NETWORK                                                                                                                                 Packet 6922 send!                                 
+15:25:9.483      AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:9.484      CLSocket::receive                                                                                                                       Receiving at:62532                                
+15:25:9.484      CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:25:9.484      CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 62532
+Remote Port:56227
+15:25:9.485      CLSocket::receive                                                                                                                       Finished receiving at:62532                       
+15:25:9.486      AbstractConnection       127.0.1.1:9999           127.0.1.1:62532          7447    ACK     6922                             0           Processing packet.                                
+15:25:9.486      AbstractConnection       127.0.1.1:9999           127.0.1.1:62532          7447    ACK     6922                             0           Received Ack for sequence number: 6922            
+15:25:9.487      AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:9.487      CLSocket::receive                                                                                                                       Receiving at:62532                                
+15:25:9.487      CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:25:9.490      SendTimer                127.0.1.1:62532          127.0.1.1:9999           6922            -1      [default]                1927854161  Sending this datagram (try: 1)                    
+15:25:9.522      CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 62532
+Remote Port:56229
+15:25:9.525      CLSocket::receive                                                                                                                       Finished receiving at:62532                       
+15:25:9.526      AbstractConnection       127.0.1.1:9999           127.0.1.1:62532          7448    ACK     6922                             0           Processing packet.                                
+15:25:9.526      AbstractConnection       127.0.1.1:9999           127.0.1.1:62532          7448    ACK     6922                             0           Received Ack for sequence number: 6922            
+15:25:9.526      AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:9.527      CLSocket::receive                                                                                                                       Receiving at:62532                                
+15:25:9.527      CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:25:9.529      NETWORK                                                                                                                                 Packet 6922 send!                                 
+15:25:9.557      AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:9.558      CLSocket::receive                                                                                                                       Receiving at:10500                                
+15:25:9.558      CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:25:18.576     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 62532
+Remote Port:53379
+15:25:18.578     CLSocket::receive                                                                                                                       Finished receiving at:62532                       
+15:25:18.578     AbstractConnection       127.0.1.1:9999           127.0.0.1:62532          7449            -1      default: hoihkh          3566275544  Processing packet.                                
+15:25:18.579     AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6923    ACK     7449                             0           Sending Ack: 7449                                 
+15:25:18.580     NETWORK                                                                                                                                 Packet 6923 send!                                 
+15:25:18.581     AbstractConnection       127.0.1.1:9999           127.0.0.1:62532          7449            -1      default: hoihkh          3566275544  Packet successfully received.                     
+15:25:18.581     AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6924    ACK     7449                             0           Sending Ack: 7449                                 
+15:25:18.588     NETWORK                                                                                                                                 Packet 6924 send!                                 
+15:25:18.597     SendTimer                127.0.1.1:62532          127.0.1.1:9999           6925            -1      default: hoihkh          3566275544  Sending this datagram (try: 1)                    
+15:25:18.599     NETWORK                                                                                                                                 Packet 6925 send!                                 
+15:25:18.602     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:18.603     CLSocket::receive                                                                                                                       Receiving at:62532                                
+15:25:18.603     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:25:18.604     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 62532
+Remote Port:56235
+15:25:18.605     CLSocket::receive                                                                                                                       Finished receiving at:62532                       
+15:25:18.608     AbstractConnection       127.0.1.1:9999           127.0.1.1:62532          7450    ACK     6925                             0           Processing packet.                                
+15:25:18.608     AbstractConnection       127.0.1.1:9999           127.0.1.1:62532          7450    ACK     6925                             0           Received Ack for sequence number: 6925            
+15:25:18.609     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:18.610     CLSocket::receive                                                                                                                       Receiving at:62532                                
+15:25:18.610     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:25:18.632     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 62532
+Remote Port:56236
+15:25:18.633     CLSocket::receive                                                                                                                       Finished receiving at:62532                       
+15:25:18.634     AbstractConnection       127.0.1.1:9999           127.0.1.1:62532          7451    ACK     6925                             0           Processing packet.                                
+15:25:18.636     AbstractConnection       127.0.1.1:9999           127.0.1.1:62532          7451    ACK     6925                             0           Received Ack for sequence number: 6925            
+15:25:18.636     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:18.636     CLSocket::receive                                                                                                                       Receiving at:62532                                
+15:25:18.636     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:25:18.660     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 62532
+Remote Port:53385
+15:25:18.662     CLSocket::receive                                                                                                                       Finished receiving at:62532                       
+15:25:18.664     AbstractConnection       127.0.1.1:9999           127.0.0.1:62532          7449            -1      default: hoihkh          3566275544  Processing packet.                                
+15:25:18.665     AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6926    ACK     7449                             0           Sending Ack: 7449                                 
+15:25:18.666     NETWORK                                                                                                                                 Packet 6926 send!                                 
+15:25:18.667     AbstractConnection       127.0.1.1:9999           127.0.0.1:62532          7449            -1      default: hoihkh          3566275544  Packet successfully received.                     
+15:25:18.669     AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6927    ACK     7449                             0           Sending Ack: 7449                                 
+15:25:18.671     NETWORK                                                                                                                                 Packet 6927 send!                                 
+15:25:18.674     SendTimer                127.0.1.1:62532          127.0.1.1:9999           6928            -1      default: hoihkh          3566275544  Sending this datagram (try: 1)                    
+15:25:18.676     NETWORK                                                                                                                                 Packet 6928 send!                                 
+15:25:18.677     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:18.680     CLSocket::receive                                                                                                                       Receiving at:62532                                
+15:25:18.680     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:25:18.692     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 62532
+Remote Port:56241
+15:25:18.693     CLSocket::receive                                                                                                                       Finished receiving at:62532                       
+15:25:18.699     AbstractConnection       127.0.1.1:9999           127.0.1.1:62532          7452    ACK     6928                             0           Processing packet.                                
+15:25:18.699     AbstractConnection       127.0.1.1:9999           127.0.1.1:62532          7452    ACK     6928                             0           Received Ack for sequence number: 6928            
+15:25:18.699     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:18.699     CLSocket::receive                                                                                                                       Receiving at:62532                                
+15:25:18.700     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:25:18.700     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 62532
+Remote Port:56242
+15:25:18.701     CLSocket::receive                                                                                                                       Finished receiving at:62532                       
+15:25:18.702     AbstractConnection       127.0.1.1:9999           127.0.1.1:62532          7453    ACK     6928                             0           Processing packet.                                
+15:25:18.702     AbstractConnection       127.0.1.1:9999           127.0.1.1:62532          7453    ACK     6928                             0           Received Ack for sequence number: 6928            
+15:25:18.703     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:18.703     CLSocket::receive                                                                                                                       Receiving at:62532                                
+15:25:18.703     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:25:20.652     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 62532
+Remote Port:53391
+15:25:20.653     CLSocket::receive                                                                                                                       Finished receiving at:62532                       
+15:25:20.653     AbstractConnection       127.0.1.1:9999           127.0.0.1:62532          7454            -1      default: lhihlk          728257187   Processing packet.                                
+15:25:20.654     AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6929    ACK     7454                             0           Sending Ack: 7454                                 
+15:25:20.655     NETWORK                                                                                                                                 Packet 6929 send!                                 
+15:25:20.655     AbstractConnection       127.0.1.1:9999           127.0.0.1:62532          7454            -1      default: lhihlk          728257187   Packet successfully received.                     
+15:25:20.655     AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6930    ACK     7454                             0           Sending Ack: 7454                                 
+15:25:20.657     NETWORK                                                                                                                                 Packet 6930 send!                                 
+15:25:20.657     SendTimer                127.0.1.1:62532          127.0.1.1:9999           6931            -1      default: lhihlk          728257187   Sending this datagram (try: 1)                    
+15:25:20.659     NETWORK                                                                                                                                 Packet 6931 send!                                 
+15:25:20.659     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:20.691     CLSocket::receive                                                                                                                       Receiving at:62532                                
+15:25:20.692     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:25:20.694     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 62532
+Remote Port:53395
+15:25:20.696     CLSocket::receive                                                                                                                       Finished receiving at:62532                       
+15:25:20.698     AbstractConnection       127.0.1.1:9999           127.0.0.1:62532          7454            -1      default: lhihlk          728257187   Processing packet.                                
+15:25:20.699     AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6932    ACK     7454                             0           Sending Ack: 7454                                 
+15:25:20.700     NETWORK                                                                                                                                 Packet 6932 send!                                 
+15:25:20.700     AbstractConnection       127.0.1.1:9999           127.0.0.1:62532          7454            -1      default: lhihlk          728257187   Packet successfully received.                     
+15:25:20.701     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:20.701     CLSocket::receive                                                                                                                       Receiving at:62532                                
+15:25:20.702     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:25:20.702     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 62532
+Remote Port:56248
+15:25:20.703     CLSocket::receive                                                                                                                       Finished receiving at:62532                       
+15:25:20.703     AbstractConnection       127.0.1.1:9999           127.0.1.1:62532          7455    ACK     6931                             0           Processing packet.                                
+15:25:20.704     AbstractConnection       127.0.1.1:9999           127.0.1.1:62532          7455    ACK     6931                             0           ERROR! Received Ack with wrong ackno.: 6931. Packet discarded!
+15:25:20.704     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:20.704     CLSocket::receive                                                                                                                       Receiving at:62532                                
+15:25:20.705     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:25:20.705     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 62532
+Remote Port:53397
+15:25:20.707     CLSocket::receive                                                                                                                       Finished receiving at:62532                       
+15:25:20.708     AbstractConnection       127.0.1.1:9999           127.0.0.1:62532          7454            -1      default: lhihlk          728257187   Processing packet.                                
+15:25:20.708     AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6933    ACK     7454                             0           Sending Ack: 7454                                 
+15:25:20.710     NETWORK                                                                                                                                 Packet 6933 send!                                 
+15:25:20.710     AbstractConnection       127.0.1.1:9999           127.0.0.1:62532          7454            -1      default: lhihlk          728257187   Packet successfully received.                     
+15:25:20.711     AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6934    ACK     7454                             0           Sending Ack: 7454                                 
+15:25:20.712     NETWORK                                                                                                                                 Packet 6934 send!                                 
+15:25:20.713     AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6935    ACK     7454                             0           Sending Ack: 7454                                 
+15:25:20.715     NETWORK                                                                                                                                 Packet 6935 send!                                 
+15:25:20.715     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:20.716     SendTimer                127.0.1.1:62532          127.0.1.1:9999           6936            -1      default: lhihlk          728257187   Sending this datagram (try: 1)                    
+15:25:20.717     NETWORK                                                                                                                                 Packet 6936 send!                                 
+15:25:20.718     CLSocket::receive                                                                                                                       Receiving at:62532                                
+15:25:20.718     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:25:20.727     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 62532
+Remote Port:56255
+15:25:20.729     CLSocket::receive                                                                                                                       Finished receiving at:62532                       
+15:25:20.731     AbstractConnection       127.0.1.1:9999           127.0.1.1:62532          7456    ACK     6931                             0           Processing packet.                                
+15:25:20.735     AbstractConnection       127.0.1.1:9999           127.0.1.1:62532          7456    ACK     6931                             0           ERROR! Received Ack with wrong ackno.: 6931. Packet discarded!
+15:25:20.736     SendTimer                127.0.1.1:62532          127.0.1.1:9999           6936            -1      default: lhihlk          728257187   Sending this datagram (try: 1)                    
+15:25:20.738     NETWORK                                                                                                                                 Packet 6936 send!                                 
+15:25:20.738     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:20.739     CLSocket::receive                                                                                                                       Receiving at:62532                                
+15:25:20.739     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:25:20.745     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 62532
+Remote Port:53405
+15:25:20.747     CLSocket::receive                                                                                                                       Finished receiving at:62532                       
+15:25:20.748     AbstractConnection       127.0.1.1:9999           127.0.0.1:62532          7454            -1      default: lhihlk          728257187   Processing packet.                                
+15:25:20.748     AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6937    ACK     7454                             0           Sending Ack: 7454                                 
+15:25:20.750     NETWORK                                                                                                                                 Packet 6937 send!                                 
+15:25:20.750     AbstractConnection       127.0.1.1:9999           127.0.0.1:62532          7454            -1      default: lhihlk          728257187   Packet successfully received.                     
+15:25:20.751     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:20.753     CLSocket::receive                                                                                                                       Receiving at:62532                                
+15:25:20.761     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:25:20.778     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 62532
+Remote Port:56259
+15:25:20.781     CLSocket::receive                                                                                                                       Finished receiving at:62532                       
+15:25:20.802     AbstractConnection       127.0.1.1:9999           127.0.1.1:62532          7457    ACK     6936                             0           Processing packet.                                
+15:25:20.803     AbstractConnection       127.0.1.1:9999           127.0.1.1:62532          7457    ACK     6936                             0           ERROR! Received Ack with wrong ackno.: 6936. Packet discarded!
+15:25:20.803     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:20.804     CLSocket::receive                                                                                                                       Receiving at:62532                                
+15:25:20.804     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:25:20.805     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 62532
+Remote Port:56260
+15:25:20.807     CLSocket::receive                                                                                                                       Finished receiving at:62532                       
+15:25:20.808     AbstractConnection       127.0.1.1:9999           127.0.1.1:62532          7458    ACK     6936                             0           Processing packet.                                
+15:25:20.808     AbstractConnection       127.0.1.1:9999           127.0.1.1:62532          7458    ACK     6936                             0           ERROR! Received Ack with wrong ackno.: 6936. Packet discarded!
+15:25:20.808     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:20.809     CLSocket::receive                                                                                                                       Receiving at:62532                                
+15:25:20.809     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:25:20.809     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 62532
+Remote Port:56261
+15:25:20.813     CLSocket::receive                                                                                                                       Finished receiving at:62532                       
+15:25:20.813     AbstractConnection       127.0.1.1:9999           127.0.1.1:62532          7459    ACK     6936                             0           Processing packet.                                
+15:25:20.813     AbstractConnection       127.0.1.1:9999           127.0.1.1:62532          7459    ACK     6936                             0           ERROR! Received Ack with wrong ackno.: 6936. Packet discarded!
+15:25:20.813     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:20.814     CLSocket::receive                                                                                                                       Receiving at:62532                                
+15:25:20.814     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:25:20.814     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 62532
+Remote Port:56262
+15:25:20.815     CLSocket::receive                                                                                                                       Finished receiving at:62532                       
+15:25:20.816     AbstractConnection       127.0.1.1:9999           127.0.1.1:62532          7460    ACK     6936                             0           Processing packet.                                
+15:25:20.816     AbstractConnection       127.0.1.1:9999           127.0.1.1:62532          7460    ACK     6936                             0           ERROR! Received Ack with wrong ackno.: 6936. Packet discarded!
+15:25:20.816     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:20.816     CLSocket::receive                                                                                                                       Receiving at:62532                                
+15:25:20.816     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:25:20.817     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 62532
+Remote Port:56263
+15:25:20.819     CLSocket::receive                                                                                                                       Finished receiving at:62532                       
+15:25:20.819     AbstractConnection       127.0.1.1:9999           127.0.1.1:62532          7461    ACK     6936                             0           Processing packet.                                
+15:25:20.820     AbstractConnection       127.0.1.1:9999           127.0.1.1:62532          7461    ACK     6936                             0           ERROR! Received Ack with wrong ackno.: 6936. Packet discarded!
+15:25:20.820     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:20.820     CLSocket::receive                                                                                                                       Receiving at:62532                                
+15:25:20.821     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:25:23.222     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 62532
+Remote Port:53412
+15:25:23.225     CLSocket::receive                                                                                                                       Finished receiving at:62532                       
+15:25:23.225     AbstractConnection       127.0.1.1:9999           127.0.0.1:62532          7462            -1      default: kkk             2801210975  Processing packet.                                
+15:25:23.225     AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6938    ACK     7462                             0           Sending Ack: 7462                                 
+15:25:23.231     NETWORK                                                                                                                                 Packet 6938 send!                                 
+15:25:23.231     AbstractConnection       127.0.1.1:9999           127.0.0.1:62532          7462            -1      default: kkk             2801210975  Packet successfully received.                     
+15:25:23.231     AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6939    ACK     7462                             0           Sending Ack: 7462                                 
+15:25:23.237     NETWORK                                                                                                                                 Packet 6939 send!                                 
+15:25:23.240     SendTimer                127.0.1.1:62532          127.0.1.1:9999           6940            -1      default: kkk             2801210975  Sending this datagram (try: 1)                    
+15:25:23.242     NETWORK                                                                                                                                 Packet 6940 send!                                 
+15:25:23.243     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:23.282     CLSocket::receive                                                                                                                       Receiving at:62532                                
+15:25:23.283     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:25:23.283     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 62532
+Remote Port:56268
+15:25:23.286     CLSocket::receive                                                                                                                       Finished receiving at:62532                       
+15:25:23.291     AbstractConnection       127.0.1.1:9999           127.0.1.1:62532          7463    ACK     6940                             0           Processing packet.                                
+15:25:23.292     AbstractConnection       127.0.1.1:9999           127.0.1.1:62532          7463    ACK     6940                             0           Received Ack for sequence number: 6940            
+15:25:23.292     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:23.292     CLSocket::receive                                                                                                                       Receiving at:62532                                
+15:25:23.292     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:25:23.293     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 62532
+Remote Port:56269
+15:25:23.293     CLSocket::receive                                                                                                                       Finished receiving at:62532                       
+15:25:23.294     AbstractConnection       127.0.1.1:9999           127.0.1.1:62532          7464    ACK     6940                             0           Processing packet.                                
+15:25:23.294     AbstractConnection       127.0.1.1:9999           127.0.1.1:62532          7464    ACK     6940                             0           Received Ack for sequence number: 6940            
+15:25:23.294     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:23.294     CLSocket::receive                                                                                                                       Receiving at:62532                                
+15:25:23.294     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:25:23.295     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 62532
+Remote Port:53418
+15:25:23.296     CLSocket::receive                                                                                                                       Finished receiving at:62532                       
+15:25:23.298     AbstractConnection       127.0.1.1:9999           127.0.0.1:62532          7462            -1      default: kkk             2801210975  Processing packet.                                
+15:25:23.298     AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6941    ACK     7462                             0           Sending Ack: 7462                                 
+15:25:23.299     NETWORK                                                                                                                                 Packet 6941 send!                                 
+15:25:23.300     AbstractConnection       127.0.1.1:9999           127.0.0.1:62532          7462            -1      default: kkk             2801210975  Packet successfully received.                     
+15:25:23.300     AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6942    ACK     7462                             0           Sending Ack: 7462                                 
+15:25:23.307     NETWORK                                                                                                                                 Packet 6942 send!                                 
+15:25:23.316     SendTimer                127.0.1.1:62532          127.0.1.1:9999           6943            -1      default: kkk             2801210975  Sending this datagram (try: 1)                    
+15:25:23.317     NETWORK                                                                                                                                 Packet 6943 send!                                 
+15:25:23.317     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:23.379     CLSocket::receive                                                                                                                       Receiving at:62532                                
+15:25:23.379     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:25:23.379     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 62532
+Remote Port:53419
+15:25:23.381     CLSocket::receive                                                                                                                       Finished receiving at:62532                       
+15:25:23.384     AbstractConnection       127.0.1.1:9999           127.0.0.1:62532          7462            -1      default: kkk             2801210975  Processing packet.                                
+15:25:23.384     AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6944    ACK     7462                             0           Sending Ack: 7462                                 
+15:25:23.386     NETWORK                                                                                                                                 Packet 6944 send!                                 
+15:25:23.386     AbstractConnection       127.0.1.1:9999           127.0.0.1:62532          7462            -1      default: kkk             2801210975  Packet successfully received.                     
+15:25:23.386     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:23.430     CLSocket::receive                                                                                                                       Receiving at:62532                                
+15:25:23.431     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:25:23.431     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 62532
+Remote Port:53423
+15:25:23.432     CLSocket::receive                                                                                                                       Finished receiving at:62532                       
+15:25:23.433     AbstractConnection       127.0.1.1:9999           127.0.0.1:62532          7462            -1      default: kkk             2801210975  Processing packet.                                
+15:25:23.434     AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6945    ACK     7462                             0           Sending Ack: 7462                                 
+15:25:23.443     NETWORK                                                                                                                                 Packet 6945 send!                                 
+15:25:23.443     AbstractConnection       127.0.1.1:9999           127.0.0.1:62532          7462            -1      default: kkk             2801210975  Packet successfully received.                     
+15:25:23.444     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:23.444     CLSocket::receive                                                                                                                       Receiving at:62532                                
+15:25:23.447     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:25:23.447     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 62532
+Remote Port:56276
+15:25:23.450     CLSocket::receive                                                                                                                       Finished receiving at:62532                       
+15:25:23.450     AbstractConnection       127.0.1.1:9999           127.0.1.1:62532          7465    ACK     6943                             0           Processing packet.                                
+15:25:23.450     AbstractConnection       127.0.1.1:9999           127.0.1.1:62532          7465    ACK     6943                             0           ERROR! Received Ack with wrong ackno.: 6943. Packet discarded!
+15:25:23.451     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:23.451     CLSocket::receive                                                                                                                       Receiving at:62532                                
+15:25:23.451     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:25:23.451     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 62532
+Remote Port:53425
+15:25:23.453     CLSocket::receive                                                                                                                       Finished receiving at:62532                       
+15:25:23.453     AbstractConnection       127.0.1.1:9999           127.0.0.1:62532          7462            -1      default: kkk             2801210975  Processing packet.                                
+15:25:23.453     AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6946    ACK     7462                             0           Sending Ack: 7462                                 
+15:25:23.455     NETWORK                                                                                                                                 Packet 6946 send!                                 
+15:25:23.455     AbstractConnection       127.0.1.1:9999           127.0.0.1:62532          7462            -1      default: kkk             2801210975  Packet successfully received.                     
+15:25:23.455     AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6947    ACK     7462                             0           Sending Ack: 7462                                 
+15:25:23.457     NETWORK                                                                                                                                 Packet 6947 send!                                 
+15:25:23.458     AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6948    ACK     7462                             0           Sending Ack: 7462                                 
+15:25:23.460     NETWORK                                                                                                                                 Packet 6948 send!                                 
+15:25:23.461     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:23.461     SendTimer                127.0.1.1:62532          127.0.1.1:9999           6949            -1      default: kkk             2801210975  Sending this datagram (try: 1)                    
+15:25:23.463     NETWORK                                                                                                                                 Packet 6949 send!                                 
+15:25:23.464     CLSocket::receive                                                                                                                       Receiving at:62532                                
+15:25:23.464     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:25:23.464     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 62532
+Remote Port:56278
+15:25:23.466     CLSocket::receive                                                                                                                       Finished receiving at:62532                       
+15:25:23.478     AbstractConnection       127.0.1.1:9999           127.0.1.1:62532          7466    ACK     6943                             0           Processing packet.                                
+15:25:23.478     AbstractConnection       127.0.1.1:9999           127.0.1.1:62532          7466    ACK     6943                             0           ERROR! Received Ack with wrong ackno.: 6943. Packet discarded!
+15:25:23.535     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:23.536     SendTimer                127.0.1.1:62532          127.0.1.1:9999           6949            -1      default: kkk             2801210975  Sending this datagram (try: 1)                    
+15:25:23.544     NETWORK                                                                                                                                 Packet 6949 send!                                 
+15:25:23.544     CLSocket::receive                                                                                                                       Receiving at:62532                                
+15:25:23.564     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:25:23.564     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 62532
+Remote Port:53427
+15:25:23.565     CLSocket::receive                                                                                                                       Finished receiving at:62532                       
+15:25:23.567     AbstractConnection       127.0.1.1:9999           127.0.0.1:62532          7462            -1      default: kkk             2801210975  Processing packet.                                
+15:25:23.568     AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6950    ACK     7462                             0           Sending Ack: 7462                                 
+15:25:23.575     NETWORK                                                                                                                                 Packet 6950 send!                                 
+15:25:23.576     AbstractConnection       127.0.1.1:9999           127.0.0.1:62532          7462            -1      default: kkk             2801210975  Packet successfully received.                     
+15:25:23.576     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:23.577     CLSocket::receive                                                                                                                       Receiving at:62532                                
+15:25:23.578     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:25:23.578     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 62532
+Remote Port:53429
+15:25:23.579     CLSocket::receive                                                                                                                       Finished receiving at:62532                       
+15:25:23.579     AbstractConnection       127.0.1.1:9999           127.0.0.1:62532          7462            -1      default: kkk             2801210975  Processing packet.                                
+15:25:23.580     AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6951    ACK     7462                             0           Sending Ack: 7462                                 
+15:25:23.584     NETWORK                                                                                                                                 Packet 6951 send!                                 
+15:25:23.586     AbstractConnection       127.0.1.1:9999           127.0.0.1:62532          7462            -1      default: kkk             2801210975  Packet successfully received.                     
+15:25:23.587     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:23.587     CLSocket::receive                                                                                                                       Receiving at:62532                                
+15:25:23.587     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:25:23.588     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 62532
+Remote Port:56287
+15:25:23.589     CLSocket::receive                                                                                                                       Finished receiving at:62532                       
+15:25:23.589     AbstractConnection       127.0.1.1:9999           127.0.1.1:62532          7467    ACK     6949                             0           Processing packet.                                
+15:25:23.589     AbstractConnection       127.0.1.1:9999           127.0.1.1:62532          7467    ACK     6949                             0           ERROR! Received Ack with wrong ackno.: 6949. Packet discarded!
+15:25:23.591     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:23.591     CLSocket::receive                                                                                                                       Receiving at:62532                                
+15:25:23.591     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:25:23.592     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 62532
+Remote Port:56288
+15:25:23.593     CLSocket::receive                                                                                                                       Finished receiving at:62532                       
+15:25:23.593     AbstractConnection       127.0.1.1:9999           127.0.1.1:62532          7468    ACK     6949                             0           Processing packet.                                
+15:25:23.593     AbstractConnection       127.0.1.1:9999           127.0.1.1:62532          7468    ACK     6949                             0           ERROR! Received Ack with wrong ackno.: 6949. Packet discarded!
+15:25:23.594     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:23.595     CLSocket::receive                                                                                                                       Receiving at:62532                                
+15:25:23.595     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:25:23.596     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 62532
+Remote Port:56290
+15:25:23.597     CLSocket::receive                                                                                                                       Finished receiving at:62532                       
+15:25:23.598     AbstractConnection       127.0.1.1:9999           127.0.1.1:62532          7469    ACK     6949                             0           Processing packet.                                
+15:25:23.598     AbstractConnection       127.0.1.1:9999           127.0.1.1:62532          7469    ACK     6949                             0           ERROR! Received Ack with wrong ackno.: 6949. Packet discarded!
+15:25:23.598     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:23.598     CLSocket::receive                                                                                                                       Receiving at:62532                                
+15:25:23.598     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:25:23.599     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 62532
+Remote Port:56291
+15:25:23.600     CLSocket::receive                                                                                                                       Finished receiving at:62532                       
+15:25:23.600     AbstractConnection       127.0.1.1:9999           127.0.1.1:62532          7470    ACK     6949                             0           Processing packet.                                
+15:25:23.600     AbstractConnection       127.0.1.1:9999           127.0.1.1:62532          7470    ACK     6949                             0           ERROR! Received Ack with wrong ackno.: 6949. Packet discarded!
+15:25:23.600     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:23.600     CLSocket::receive                                                                                                                       Receiving at:62532                                
+15:25:23.601     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:25:23.602     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 62532
+Remote Port:56292
+15:25:23.603     CLSocket::receive                                                                                                                       Finished receiving at:62532                       
+15:25:23.603     AbstractConnection       127.0.1.1:9999           127.0.1.1:62532          7471    ACK     6949                             0           Processing packet.                                
+15:25:23.603     AbstractConnection       127.0.1.1:9999           127.0.1.1:62532          7471    ACK     6949                             0           ERROR! Received Ack with wrong ackno.: 6949. Packet discarded!
+15:25:23.603     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:23.604     CLSocket::receive                                                                                                                       Receiving at:62532                                
+15:25:23.604     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:25:25.386     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 62532
+Remote Port:53443
+15:25:25.387     CLSocket::receive                                                                                                                       Finished receiving at:62532                       
+15:25:25.387     AbstractConnection       127.0.1.1:9999           127.0.0.1:62532          7472            -1      default: lll             1922892734  Processing packet.                                
+15:25:25.387     AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6952    ACK     7472                             0           Sending Ack: 7472                                 
+15:25:25.389     NETWORK                                                                                                                                 Packet 6952 send!                                 
+15:25:25.389     AbstractConnection       127.0.1.1:9999           127.0.0.1:62532          7472            -1      default: lll             1922892734  Packet successfully received.                     
+15:25:25.389     AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6953    ACK     7472                             0           Sending Ack: 7472                                 
+15:25:25.392     NETWORK                                                                                                                                 Packet 6953 send!                                 
+15:25:25.395     SendTimer                127.0.1.1:62532          127.0.1.1:9999           6954            -1      default: lll             1922892734  Sending this datagram (try: 1)                    
+15:25:25.397     NETWORK                                                                                                                                 Packet 6954 send!                                 
+15:25:25.398     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:25.398     CLSocket::receive                                                                                                                       Receiving at:62532                                
+15:25:25.398     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:25:25.401     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 62532
+Remote Port:53447
+15:25:25.402     CLSocket::receive                                                                                                                       Finished receiving at:62532                       
+15:25:25.405     AbstractConnection       127.0.1.1:9999           127.0.0.1:62532          7472            -1      default: lll             1922892734  Processing packet.                                
+15:25:25.405     AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6955    ACK     7472                             0           Sending Ack: 7472                                 
+15:25:25.407     NETWORK                                                                                                                                 Packet 6955 send!                                 
+15:25:25.407     AbstractConnection       127.0.1.1:9999           127.0.0.1:62532          7472            -1      default: lll             1922892734  Packet successfully received.                     
+15:25:25.409     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:25.416     CLSocket::receive                                                                                                                       Receiving at:62532                                
+15:25:25.417     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:25:25.417     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 62532
+Remote Port:56300
+15:25:25.518     CLSocket::receive                                                                                                                       Finished receiving at:62532                       
+15:25:25.520     AbstractConnection       127.0.1.1:9999           127.0.1.1:62532          7473    ACK     6954                             0           Processing packet.                                
+15:25:25.520     AbstractConnection       127.0.1.1:9999           127.0.1.1:62532          7473    ACK     6954                             0           ERROR! Received Ack with wrong ackno.: 6954. Packet discarded!
+15:25:25.520     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:25.520     CLSocket::receive                                                                                                                       Receiving at:62532                                
+15:25:25.521     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:25:25.521     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 62532
+Remote Port:53450
+15:25:25.522     CLSocket::receive                                                                                                                       Finished receiving at:62532                       
+15:25:25.522     AbstractConnection       127.0.1.1:9999           127.0.0.1:62532          7472            -1      default: lll             1922892734  Processing packet.                                
+15:25:25.522     AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6956    ACK     7472                             0           Sending Ack: 7472                                 
+15:25:25.524     NETWORK                                                                                                                                 Packet 6956 send!                                 
+15:25:25.524     AbstractConnection       127.0.1.1:9999           127.0.0.1:62532          7472            -1      default: lll             1922892734  Packet successfully received.                     
+15:25:25.524     AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6957    ACK     7472                             0           Sending Ack: 7472                                 
+15:25:25.526     NETWORK                                                                                                                                 Packet 6957 send!                                 
+15:25:25.531     AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6958    ACK     7472                             0           Sending Ack: 7472                                 
+15:25:25.534     NETWORK                                                                                                                                 Packet 6958 send!                                 
+15:25:25.545     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:25.546     SendTimer                127.0.1.1:62532          127.0.1.1:9999           6959            -1      default: lll             1922892734  Sending this datagram (try: 1)                    
+15:25:25.547     NETWORK                                                                                                                                 Packet 6959 send!                                 
+15:25:25.548     CLSocket::receive                                                                                                                       Receiving at:62532                                
+15:25:25.548     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:25:25.548     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 62532
+Remote Port:56303
+15:25:25.550     CLSocket::receive                                                                                                                       Finished receiving at:62532                       
+15:25:25.550     AbstractConnection       127.0.1.1:9999           127.0.1.1:62532          7474    ACK     6954                             0           Processing packet.                                
+15:25:25.557     AbstractConnection       127.0.1.1:9999           127.0.1.1:62532          7474    ACK     6954                             0           ERROR! Received Ack with wrong ackno.: 6954. Packet discarded!
+15:25:25.558     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:25.558     SendTimer                127.0.1.1:62532          127.0.1.1:9999           6959            -1      default: lll             1922892734  Sending this datagram (try: 1)                    
+15:25:25.593     NETWORK                                                                                                                                 Packet 6959 send!                                 
+15:25:25.595     CLSocket::receive                                                                                                                       Receiving at:62532                                
+15:25:25.595     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:25:25.596     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 62532
+Remote Port:53452
+15:25:25.599     CLSocket::receive                                                                                                                       Finished receiving at:62532                       
+15:25:25.600     AbstractConnection       127.0.1.1:9999           127.0.0.1:62532          7472            -1      default: lll             1922892734  Processing packet.                                
+15:25:25.600     AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6960    ACK     7472                             0           Sending Ack: 7472                                 
+15:25:25.607     NETWORK                                                                                                                                 Packet 6960 send!                                 
+15:25:25.607     AbstractConnection       127.0.1.1:9999           127.0.0.1:62532          7472            -1      default: lll             1922892734  Packet successfully received.                     
+15:25:25.608     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:25.608     CLSocket::receive                                                                                                                       Receiving at:62532                                
+15:25:25.608     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:25:25.609     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 62532
+Remote Port:56309
+15:25:25.613     CLSocket::receive                                                                                                                       Finished receiving at:62532                       
+15:25:25.613     AbstractConnection       127.0.1.1:9999           127.0.1.1:62532          7475    ACK     6959                             0           Processing packet.                                
+15:25:25.614     AbstractConnection       127.0.1.1:9999           127.0.1.1:62532          7475    ACK     6959                             0           ERROR! Received Ack with wrong ackno.: 6959. Packet discarded!
+15:25:25.614     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:25.614     CLSocket::receive                                                                                                                       Receiving at:62532                                
+15:25:25.615     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:25:25.615     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 62532
+Remote Port:56310
+15:25:25.619     CLSocket::receive                                                                                                                       Finished receiving at:62532                       
+15:25:25.619     AbstractConnection       127.0.1.1:9999           127.0.1.1:62532          7476    ACK     6959                             0           Processing packet.                                
+15:25:25.619     AbstractConnection       127.0.1.1:9999           127.0.1.1:62532          7476    ACK     6959                             0           ERROR! Received Ack with wrong ackno.: 6959. Packet discarded!
+15:25:25.619     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:25.619     CLSocket::receive                                                                                                                       Receiving at:62532                                
+15:25:25.620     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:25:25.620     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 62532
+Remote Port:56312
+15:25:25.621     CLSocket::receive                                                                                                                       Finished receiving at:62532                       
+15:25:25.621     AbstractConnection       127.0.1.1:9999           127.0.1.1:62532          7477    ACK     6959                             0           Processing packet.                                
+15:25:25.621     AbstractConnection       127.0.1.1:9999           127.0.1.1:62532          7477    ACK     6959                             0           ERROR! Received Ack with wrong ackno.: 6959. Packet discarded!
+15:25:25.622     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:25.622     CLSocket::receive                                                                                                                       Receiving at:62532                                
+15:25:25.622     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:25:25.622     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 62532
+Remote Port:56313
+15:25:25.630     CLSocket::receive                                                                                                                       Finished receiving at:62532                       
+15:25:25.630     AbstractConnection       127.0.1.1:9999           127.0.1.1:62532          7478    ACK     6959                             0           Processing packet.                                
+15:25:25.632     AbstractConnection       127.0.1.1:9999           127.0.1.1:62532          7478    ACK     6959                             0           ERROR! Received Ack with wrong ackno.: 6959. Packet discarded!
+15:25:25.632     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:25.633     CLSocket::receive                                                                                                                       Receiving at:62532                                
+15:25:25.633     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:25:25.633     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 62532
+Remote Port:56314
+15:25:25.635     CLSocket::receive                                                                                                                       Finished receiving at:62532                       
+15:25:25.635     AbstractConnection       127.0.1.1:9999           127.0.1.1:62532          7479    ACK     6959                             0           Processing packet.                                
+15:25:25.635     AbstractConnection       127.0.1.1:9999           127.0.1.1:62532          7479    ACK     6959                             0           ERROR! Received Ack with wrong ackno.: 6959. Packet discarded!
+15:25:25.635     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:25.636     CLSocket::receive                                                                                                                       Receiving at:62532                                
+15:25:25.636     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:25:27.893     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 62532
+Remote Port:53464
+15:25:27.895     CLSocket::receive                                                                                                                       Finished receiving at:62532                       
+15:25:27.895     AbstractConnection       127.0.1.1:9999           127.0.0.1:62532          7480            -1      default is closing       3997694417  Processing packet.                                
+15:25:27.896     AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6961    ACK     7480                             0           Sending Ack: 7480                                 
+15:25:27.896     NETWORK                                                                                                                                 Packet 6961 send!                                 
+15:25:27.897     AbstractConnection       127.0.1.1:9999           127.0.0.1:62532          7480            -1      default is closing       3997694417  Packet successfully received.                     
+15:25:27.898     AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6962    ACK     7480                             0           Sending Ack: 7480                                 
+15:25:27.899     NETWORK                                                                                                                                 Packet 6962 send!                                 
+15:25:27.899     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:27.899     CLSocket::receive                                                                                                                       Receiving at:62532                                
+15:25:27.900     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:25:27.905     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 62532
+Remote Port:53467
+15:25:27.907     CLSocket::receive                                                                                                                       Finished receiving at:62532                       
+15:25:27.907     AbstractConnection       127.0.1.1:9999           127.0.0.1:62532          7480            -1      default is closing       3997694417  Processing packet.                                
+15:25:27.907     AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6963    ACK     7480                             0           Sending Ack: 7480                                 
+15:25:27.909     NETWORK                                                                                                                                 Packet 6963 send!                                 
+15:25:27.909     AbstractConnection       127.0.1.1:9999           127.0.0.1:62532          7480            -1      default is closing       3997694417  Packet successfully received.                     
+15:25:27.909     AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6964    ACK     7480                             0           Sending Ack: 7480                                 
+15:25:27.911     NETWORK                                                                                                                                 Packet 6964 send!                                 
+15:25:27.911     AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6965    ACK     7480                             0           Sending Ack: 7480                                 
+15:25:27.913     NETWORK                                                                                                                                 Packet 6965 send!                                 
+15:25:27.914     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:27.914     CLSocket::receive                                                                                                                       Receiving at:62532                                
+15:25:27.914     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:25:27.920     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 62532
+Remote Port:53471
+15:25:27.921     CLSocket::receive                                                                                                                       Finished receiving at:62532                       
+15:25:27.921     AbstractConnection       127.0.1.1:9999           127.0.0.1:62532          7480            -1      default is closing       3997694417  Processing packet.                                
+15:25:27.921     AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6966    ACK     7480                             0           Sending Ack: 7480                                 
+15:25:27.922     NETWORK                                                                                                                                 Packet 6966 send!                                 
+15:25:27.923     AbstractConnection       127.0.1.1:9999           127.0.0.1:62532          7480            -1      default is closing       3997694417  Packet successfully received.                     
+15:25:27.923     AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6967    ACK     7480                             0           Sending Ack: 7480                                 
+15:25:27.924     NETWORK                                                                                                                                 Packet 6967 send!                                 
+15:25:27.924     AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6968    ACK     7480                             0           Sending Ack: 7480                                 
+15:25:27.925     NETWORK                                                                                                                                 Packet 6968 send!                                 
+15:25:27.925     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:27.927     CLSocket::receive                                                                                                                       Receiving at:62532                                
+15:25:27.927     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:25:27.927     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 62532
+Remote Port:53474
+15:25:27.928     CLSocket::receive                                                                                                                       Finished receiving at:62532                       
+15:25:27.928     AbstractConnection       127.0.1.1:9999           127.0.0.1:62532          7480            -1      default is closing       3997694417  Processing packet.                                
+15:25:27.928     AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6969    ACK     7480                             0           Sending Ack: 7480                                 
+15:25:27.929     NETWORK                                                                                                                                 Packet 6969 send!                                 
+15:25:27.930     AbstractConnection       127.0.1.1:9999           127.0.0.1:62532          7480            -1      default is closing       3997694417  Packet successfully received.                     
+15:25:27.930     AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6970    ACK     7480                             0           Sending Ack: 7480                                 
+15:25:27.931     NETWORK                                                                                                                                 Packet 6970 send!                                 
+15:25:27.931     AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6971    ACK     7480                             0           Sending Ack: 7480                                 
+15:25:27.932     NETWORK                                                                                                                                 Packet 6971 send!                                 
+15:25:27.932     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:27.932     CLSocket::receive                                                                                                                       Receiving at:62532                                
+15:25:27.933     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:25:27.935     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 62532
+Remote Port:53479
+15:25:27.937     CLSocket::receive                                                                                                                       Finished receiving at:62532                       
+15:25:27.937     AbstractConnection       127.0.1.1:9999           127.0.0.1:62532          7480            -1      default is closing       3997694417  Processing packet.                                
+15:25:27.937     AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6972    ACK     7480                             0           Sending Ack: 7480                                 
+15:25:27.939     NETWORK                                                                                                                                 Packet 6972 send!                                 
+15:25:27.939     AbstractConnection       127.0.1.1:9999           127.0.0.1:62532          7480            -1      default is closing       3997694417  Packet successfully received.                     
+15:25:27.939     AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6973    ACK     7480                             0           Sending Ack: 7480                                 
+15:25:27.940     NETWORK                                                                                                                                 Packet 6973 send!                                 
+15:25:27.940     AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6974    ACK     7480                             0           Sending Ack: 7480                                 
+15:25:27.945     NETWORK                                                                                                                                 Packet 6974 send!                                 
+15:25:27.945     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:27.945     CLSocket::receive                                                                                                                       Receiving at:62532                                
+15:25:27.946     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:25:27.953     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 62532
+Remote Port:53483
+15:25:27.954     CLSocket::receive                                                                                                                       Finished receiving at:62532                       
+15:25:27.954     AbstractConnection       127.0.1.1:9999           127.0.0.1:62532          7480            -1      default is closing       3997694417  Processing packet.                                
+15:25:27.957     AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6975    ACK     7480                             0           Sending Ack: 7480                                 
+15:25:27.959     NETWORK                                                                                                                                 Packet 6975 send!                                 
+15:25:27.959     AbstractConnection       127.0.1.1:9999           127.0.0.1:62532          7480            -1      default is closing       3997694417  Packet successfully received.                     
+15:25:27.960     AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6976    ACK     7480                             0           Sending Ack: 7480                                 
+15:25:27.960     NETWORK                                                                                                                                 Packet 6976 send!                                 
+15:25:27.961     AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6977    ACK     7480                             0           Sending Ack: 7480                                 
+15:25:27.962     NETWORK                                                                                                                                 Packet 6977 send!                                 
+15:25:27.963     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:27.963     CLSocket::receive                                                                                                                       Receiving at:62532                                
+15:25:27.963     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:25:27.968     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 62532
+Remote Port:53487
+15:25:27.972     CLSocket::receive                                                                                                                       Finished receiving at:62532                       
+15:25:27.973     AbstractConnection       127.0.1.1:9999           127.0.0.1:62532          7480            -1      default is closing       3997694417  Processing packet.                                
+15:25:27.973     AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6978    ACK     7480                             0           Sending Ack: 7480                                 
+15:25:27.974     NETWORK                                                                                                                                 Packet 6978 send!                                 
+15:25:27.976     AbstractConnection       127.0.1.1:9999           127.0.0.1:62532          7480            -1      default is closing       3997694417  Packet successfully received.                     
+15:25:27.976     AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6979    ACK     7480                             0           Sending Ack: 7480                                 
+15:25:27.977     NETWORK                                                                                                                                 Packet 6979 send!                                 
+15:25:27.977     AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6980    ACK     7480                             0           Sending Ack: 7480                                 
+15:25:27.978     NETWORK                                                                                                                                 Packet 6980 send!                                 
+15:25:27.979     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:27.979     CLSocket::receive                                                                                                                       Receiving at:62532                                
+15:25:27.980     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:25:27.981     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 62532
+Remote Port:53491
+15:25:27.984     CLSocket::receive                                                                                                                       Finished receiving at:62532                       
+15:25:27.984     AbstractConnection       127.0.1.1:9999           127.0.0.1:62532          7480            -1      default is closing       3997694417  Processing packet.                                
+15:25:27.984     AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6981    ACK     7480                             0           Sending Ack: 7480                                 
+15:25:27.986     NETWORK                                                                                                                                 Packet 6981 send!                                 
+15:25:27.986     AbstractConnection       127.0.1.1:9999           127.0.0.1:62532          7480            -1      default is closing       3997694417  Packet successfully received.                     
+15:25:27.986     AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6982    ACK     7480                             0           Sending Ack: 7480                                 
+15:25:27.988     NETWORK                                                                                                                                 Packet 6982 send!                                 
+15:25:27.988     AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6983    ACK     7480                             0           Sending Ack: 7480                                 
+15:25:27.990     NETWORK                                                                                                                                 Packet 6983 send!                                 
+15:25:27.990     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:27.990     CLSocket::receive                                                                                                                       Receiving at:62532                                
+15:25:27.991     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:25:27.996     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 62532
+Remote Port:53495
+15:25:28.1       CLSocket::receive                                                                                                                       Finished receiving at:62532                       
+15:25:28.2       AbstractConnection       127.0.1.1:9999           127.0.0.1:62532          7480            -1      default is closing       3997694417  Processing packet.                                
+15:25:28.2       AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6984    ACK     7480                             0           Sending Ack: 7480                                 
+15:25:28.3       NETWORK                                                                                                                                 Packet 6984 send!                                 
+15:25:28.4       AbstractConnection       127.0.1.1:9999           127.0.0.1:62532          7480            -1      default is closing       3997694417  Packet successfully received.                     
+15:25:28.4       AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6985    ACK     7480                             0           Sending Ack: 7480                                 
+15:25:28.6       NETWORK                                                                                                                                 Packet 6985 send!                                 
+15:25:28.7       AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6986    ACK     7480                             0           Sending Ack: 7480                                 
+15:25:28.9       NETWORK                                                                                                                                 Packet 6986 send!                                 
+15:25:28.10      AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:28.10      CLSocket::receive                                                                                                                       Receiving at:62532                                
+15:25:28.11      CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:25:28.43      CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 62532
+Remote Port:53499
+15:25:28.45      CLSocket::receive                                                                                                                       Finished receiving at:62532                       
+15:25:28.45      AbstractConnection       127.0.1.1:9999           127.0.0.1:62532          7480            -1      default is closing       3997694417  Processing packet.                                
+15:25:28.45      AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6987    ACK     7480                             0           Sending Ack: 7480                                 
+15:25:28.51      NETWORK                                                                                                                                 Packet 6987 send!                                 
+15:25:28.52      AbstractConnection       127.0.1.1:9999           127.0.0.1:62532          7480            -1      default is closing       3997694417  Packet successfully received.                     
+15:25:28.52      AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6988    ACK     7480                             0           Sending Ack: 7480                                 
+15:25:28.60      NETWORK                                                                                                                                 Packet 6988 send!                                 
+15:25:28.60      AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6989    ACK     7480                             0           Sending Ack: 7480                                 
+15:25:28.61      NETWORK                                                                                                                                 Packet 6989 send!                                 
+15:25:28.62      AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:28.64      CLSocket::receive                                                                                                                       Receiving at:62532                                
+15:25:28.65      CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:25:28.65      CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 62532
+Remote Port:53500
+15:25:28.66      CLSocket::receive                                                                                                                       Finished receiving at:62532                       
+15:25:28.66      AbstractConnection       127.0.1.1:9999           127.0.0.1:62532          7480            -1      default is closing       3997694417  Processing packet.                                
+15:25:28.66      AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6990    ACK     7480                             0           Sending Ack: 7480                                 
+15:25:28.70      NETWORK                                                                                                                                 Packet 6990 send!                                 
+15:25:28.71      AbstractConnection       127.0.1.1:9999           127.0.0.1:62532          7480            -1      default is closing       3997694417  Packet successfully received.                     
+15:25:28.71      AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6991    ACK     7480                             0           Sending Ack: 7480                                 
+15:25:28.72      NETWORK                                                                                                                                 Packet 6991 send!                                 
+15:25:28.72      AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6992    ACK     7480                             0           Sending Ack: 7480                                 
+15:25:28.73      NETWORK                                                                                                                                 Packet 6992 send!                                 
+15:25:28.73      AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:28.74      CLSocket::receive                                                                                                                       Receiving at:62532                                
+15:25:28.74      CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:25:28.125     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 62532
+Remote Port:53507
+15:25:28.126     CLSocket::receive                                                                                                                       Finished receiving at:62532                       
+15:25:28.126     AbstractConnection       127.0.1.1:9999           127.0.0.1:62532          7480            -1      default is closing       3997694417  Processing packet.                                
+15:25:28.126     AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6993    ACK     7480                             0           Sending Ack: 7480                                 
+15:25:28.128     NETWORK                                                                                                                                 Packet 6993 send!                                 
+15:25:28.128     AbstractConnection       127.0.1.1:9999           127.0.0.1:62532          7480            -1      default is closing       3997694417  Packet successfully received.                     
+15:25:28.128     AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6994    ACK     7480                             0           Sending Ack: 7480                                 
+15:25:28.129     NETWORK                                                                                                                                 Packet 6994 send!                                 
+15:25:28.129     AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6995    ACK     7480                             0           Sending Ack: 7480                                 
+15:25:28.130     NETWORK                                                                                                                                 Packet 6995 send!                                 
+15:25:28.131     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:28.131     CLSocket::receive                                                                                                                       Receiving at:62532                                
+15:25:28.131     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:25:28.133     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 62532
+Remote Port:53511
+15:25:28.134     CLSocket::receive                                                                                                                       Finished receiving at:62532                       
+15:25:28.138     AbstractConnection       127.0.1.1:9999           127.0.0.1:62532          7480            -1      default is closing       3997694417  Processing packet.                                
+15:25:28.138     AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6996    ACK     7480                             0           Sending Ack: 7480                                 
+15:25:28.139     NETWORK                                                                                                                                 Packet 6996 send!                                 
+15:25:28.139     AbstractConnection       127.0.1.1:9999           127.0.0.1:62532          7480            -1      default is closing       3997694417  Packet successfully received.                     
+15:25:28.139     AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6997    ACK     7480                             0           Sending Ack: 7480                                 
+15:25:28.140     NETWORK                                                                                                                                 Packet 6997 send!                                 
+15:25:28.141     AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6998    ACK     7480                             0           Sending Ack: 7480                                 
+15:25:28.142     NETWORK                                                                                                                                 Packet 6998 send!                                 
+15:25:28.142     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:28.143     CLSocket::receive                                                                                                                       Receiving at:62532                                
+15:25:28.143     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:25:28.185     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 62532
+Remote Port:53515
+15:25:28.186     CLSocket::receive                                                                                                                       Finished receiving at:62532                       
+15:25:28.186     AbstractConnection       127.0.1.1:9999           127.0.0.1:62532          7480            -1      default is closing       3997694417  Processing packet.                                
+15:25:28.186     AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           6999    ACK     7480                             0           Sending Ack: 7480                                 
+15:25:28.189     NETWORK                                                                                                                                 Packet 6999 send!                                 
+15:25:28.189     AbstractConnection       127.0.1.1:9999           127.0.0.1:62532          7480            -1      default is closing       3997694417  Packet successfully received.                     
+15:25:28.189     AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           7000    ACK     7480                             0           Sending Ack: 7480                                 
+15:25:28.194     NETWORK                                                                                                                                 Packet 7000 send!                                 
+15:25:28.194     AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           7001    ACK     7480                             0           Sending Ack: 7480                                 
+15:25:28.196     NETWORK                                                                                                                                 Packet 7001 send!                                 
+15:25:28.197     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:28.197     CLSocket::receive                                                                                                                       Receiving at:62532                                
+15:25:28.197     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:25:28.199     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 62532
+Remote Port:53519
+15:25:28.200     CLSocket::receive                                                                                                                       Finished receiving at:62532                       
+15:25:28.200     AbstractConnection       127.0.1.1:9999           127.0.0.1:62532          7481    FIN     -1                               0           Processing packet.                                
+15:25:28.200     AbstractConnection       127.0.1.1:9999           127.0.0.1:62532          7481    FIN     -1                               0           FIN received: Passive close                       
+15:25:28.201     AbstractConnection                                                                                                                      State: CLOSE_WAIT                                 
+15:25:28.201     AbstractConnection       127.0.1.1:62532          127.0.1.1:9999           7002    ACK     7481                             0           Sending Ack: 7481                                 
+15:25:28.202     NETWORK                                                                                                                                 Packet 7002 send!                                 
+15:25:28.211     SendTimer                127.0.1.1:62532          127.0.1.1:9999           7003    FIN     -1                               0           Sending this datagram (try: 1)                    
+15:25:28.213     NETWORK                                                                                                                                 Packet 7003 send!                                 
+15:25:28.215     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:25:28.216     CLSocket::receive                                                                                                                       Receiving at:62532                                
+15:25:28.216     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:25:29.11      SendTimer                127.0.1.1:62532          127.0.1.1:9999           7003    FIN     -1                               0           Sending this datagram (try: 2)                    
+15:25:29.12      SendTimer                                                                                                                               ERROR: Could not establish a connection to 127.0.1.1:9999
+15:25:29.811     SendTimer                127.0.1.1:62532          127.0.1.1:9999           7003    FIN     -1                               0           Sending this datagram (try: 3)                    
+15:25:29.812     SendTimer                                                                                                                               ERROR: Could not establish a connection to 127.0.1.1:9999

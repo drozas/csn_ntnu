@@ -1,0 +1,90 @@
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Timestamp        Logging Entity           Source                   Destination              Seq No  Flag    Ack No  Start Payload            Checksum    Comment                                           
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+13:35:39.696     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+13:35:39.701     CLSocket::receive                                                                                                                       Receiving at:10500                                
+13:35:46.513     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 10500
+Remote Port:47200
+13:35:46.543     CLSocket::receive                                                                                                                       Finished receiving at:10500                       
+13:35:46.543     AbstractConnection       127.0.1.1:7777           127.0.0.1:10500          8694    SYN     -1                               0           Processing packet.                                
+13:35:46.543     AbstractConnection       127.0.1.1:46921          127.0.1.1:7777           8052    SYNACK  8694                             0           Sending Ack: 8694                                 
+13:35:46.551     NETWORK                                                                                                                                 Packet 8052 send!                                 
+13:35:46.552     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+13:35:46.554     CLSocket::receive                                                                                                                       Receiving at:10500                                
+13:35:46.555     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+13:35:46.560     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 10500
+Remote Port:35212
+13:35:46.563     CLSocket::receive                                                                                                                       Finished receiving at:10500                       
+13:35:46.564     AbstractConnection       127.0.1.1:7777           127.0.1.1:10500          8695    ACK     8052                             0           Processing packet.                                
+13:35:46.564     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+13:35:46.570     CLSocket::receive                                                                                                                       Receiving at:46921                                
+13:35:48.176     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 46921
+Remote Port:41163
+13:35:48.180     CLSocket::receive                                                                                                                       Finished receiving at:46921                       
+13:35:48.180     AbstractConnection       127.0.1.1:7777           127.0.0.1:46921          8696            -1      Hello:default            215245029   Processing packet.                                
+13:35:48.181     AbstractConnection       127.0.1.1:46921          127.0.1.1:7777           8542    ACK     8696                             0           Sending Ack: 8696                                 
+13:35:48.188     NETWORK                                                                                                                                 Packet 8542 send!                                 
+13:35:48.188     AbstractConnection       127.0.1.1:7777           127.0.0.1:46921          8696            -1      Hello:default            215245029   Packet successfully received.                     
+13:35:48.192     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+13:35:48.192     CLSocket::receive                                                                                                                       Receiving at:46921                                
+13:35:48.193     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+13:35:48.195     SendTimer                127.0.1.1:46921          127.0.1.1:7777           8543            -1      *: default joined.       237488121   Sending this datagram (try: 1)                    
+13:35:48.196     NETWORK                  127.0.1.1:46921          127.0.1.1:7777           8543            -1      *: default joined.       237488121   Datagram was lost                                 
+13:35:48.994     SendTimer                127.0.1.1:46921          127.0.1.1:7777           8543            -1      *: default joined.       237488121   Sending this datagram (try: 2)                    
+13:35:48.995     NETWORK                  127.0.1.1:46921          127.0.1.1:7777           8543            -1      *: default joined.       237488121   Datagram was lost                                 
+13:35:49.794     SendTimer                127.0.1.1:46921          127.0.1.1:7777           8543            -1      *: default joined.       237488121   Sending this datagram (try: 3)                    
+13:35:49.802     NETWORK                  127.0.1.1:46921          127.0.1.1:7777           8543            -1      *: default joined.       237488121   Datagram was lost                                 
+13:35:50.594     SendTimer                127.0.1.1:46921          127.0.1.1:7777           8543            -1      *: default joined.       237488121   Sending this datagram (try: 4)                    
+13:35:50.595     NETWORK                  127.0.1.1:46921          127.0.1.1:7777           8543            -1      *: default joined.       237488121   Datagram was lost                                 
+13:35:51.394     SendTimer                127.0.1.1:46921          127.0.1.1:7777           8543            -1      *: default joined.       237488121   Sending this datagram (try: 5)                    
+13:35:51.395     NETWORK                  127.0.1.1:46921          127.0.1.1:7777           8543            -1      *: default joined.       237488121   Datagram was lost                                 
+13:35:52.195     SendTimer                127.0.1.1:46921          127.0.1.1:7777           8543            -1      *: default joined.       237488121   Sending this datagram (try: 6)                    
+13:35:52.195     NETWORK                  127.0.1.1:46921          127.0.1.1:7777           8543            -1      *: default joined.       237488121   Datagram was lost                                 
+13:35:52.994     SendTimer                127.0.1.1:46921          127.0.1.1:7777           8543            -1      *: default joined.       237488121   Sending this datagram (try: 7)                    
+13:35:52.995     NETWORK                  127.0.1.1:46921          127.0.1.1:7777           8543            -1      *: default joined.       237488121   Datagram was lost                                 
+13:35:53.64      SendTimer                127.0.1.1:46921          127.0.1.1:7777           8544            -1      [default]                1927854161  Sending this datagram (try: 1)                    
+13:35:53.65      NETWORK                  127.0.1.1:46921          127.0.1.1:7777           8544            -1      [default]                1927854161  Datagram was lost                                 
+13:35:53.863     SendTimer                127.0.1.1:46921          127.0.1.1:7777           8544            -1      [default]                1927854161  Sending this datagram (try: 2)                    
+13:35:53.864     NETWORK                  127.0.1.1:46921          127.0.1.1:7777           8544            -1      [default]                1927854161  Datagram was lost                                 
+13:35:54.663     SendTimer                127.0.1.1:46921          127.0.1.1:7777           8544            -1      [default]                1927854161  Sending this datagram (try: 3)                    
+13:35:54.664     NETWORK                  127.0.1.1:46921          127.0.1.1:7777           8544            -1      [default]                1927854161  Datagram was lost                                 
+13:35:55.463     SendTimer                127.0.1.1:46921          127.0.1.1:7777           8544            -1      [default]                1927854161  Sending this datagram (try: 4)                    
+13:35:55.464     NETWORK                  127.0.1.1:46921          127.0.1.1:7777           8544            -1      [default]                1927854161  Datagram was lost                                 
+13:35:56.263     SendTimer                127.0.1.1:46921          127.0.1.1:7777           8544            -1      [default]                1927854161  Sending this datagram (try: 5)                    
+13:35:56.264     NETWORK                  127.0.1.1:46921          127.0.1.1:7777           8544            -1      [default]                1927854161  Datagram was lost                                 
+13:35:57.63      SendTimer                127.0.1.1:46921          127.0.1.1:7777           8544            -1      [default]                1927854161  Sending this datagram (try: 6)                    
+13:35:57.63      NETWORK                  127.0.1.1:46921          127.0.1.1:7777           8544            -1      [default]                1927854161  Datagram was lost                                 
+13:35:57.863     SendTimer                127.0.1.1:46921          127.0.1.1:7777           8544            -1      [default]                1927854161  Sending this datagram (try: 7)                    
+13:35:57.864     NETWORK                  127.0.1.1:46921          127.0.1.1:7777           8544            -1      [default]                1927854161  Datagram was lost                                 
+13:35:58.664     SendTimer                127.0.1.1:46921          127.0.1.1:7777           8544            -1      [default]                1927854161  Sending this datagram (try: 8)                    
+13:35:58.664     NETWORK                  127.0.1.1:46921          127.0.1.1:7777           8544            -1      [default]                1927854161  Datagram was lost                                 
+13:35:59.463     SendTimer                127.0.1.1:46921          127.0.1.1:7777           8544            -1      [default]                1927854161  Sending this datagram (try: 9)                    
+13:35:59.467     NETWORK                                                                                                                                 Packet 8544 send!                                 
+13:36:0.263      SendTimer                127.0.1.1:46921          127.0.1.1:7777           8544            -1      [default]                1927854161  Sending this datagram (try: 10)                   
+13:36:0.267      NETWORK                                                                                                                                 Packet 8544 send!                                 
+13:36:1.63       SendTimer                127.0.1.1:46921          127.0.1.1:7777           8544            -1      [default]                1927854161  Sending this datagram (try: 11)                   
+13:36:1.67       NETWORK                                                                                                                                 Packet 8544 send!                                 
+13:36:1.863      SendTimer                127.0.1.1:46921          127.0.1.1:7777           8544            -1      [default]                1927854161  Sending this datagram (try: 12)                   
+13:36:1.864      NETWORK                  127.0.1.1:46921          127.0.1.1:7777           8544            -1      [default]                1927854161  Error in header                                   
+13:36:1.864      NETWORK                  127.0.1.1:46921          127.0.1.1:7777           8544    ACK     -1                               1927854161  flags was updated to 2                            
+13:36:1.868      NETWORK                                                                                                                                 Packet 8544 send!                                 
+13:36:2.663      SendTimer                127.0.1.1:46921          127.0.1.1:7777           8544            -1      [default]                1927854161  Sending this datagram (try: 13)                   
+13:36:2.664      AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+13:36:2.664      NETWORK                  127.0.1.1:46921          127.0.1.1:7777           8544            -1      [default]                1927854161  datagram was delayed 4861ms                       
+13:36:2.665      CLSocket::receive                                                                                                                       Receiving at:10500                                
+13:36:2.665      CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+13:36:7.532      NETWORK                  127.0.1.1:46921          127.0.1.1:7777           8544            -1      [default]                1927854161   was sent after a delay                           

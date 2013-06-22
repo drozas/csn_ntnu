@@ -1,0 +1,19 @@
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Timestamp        Logging Entity           Source                   Destination              Seq No  Flag    Ack No  Start Payload            Checksum    Comment                                           
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+15:49:4.716      SendTimer                127.0.1.1:9999           127.0.0.1:10500          3203    SYN     -1                               0           Sending this datagram (try: 1)                    
+15:49:4.751      NETWORK                                                                                                                                 Packet 3203 send!                                 
+15:49:4.752      AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:49:4.754      CLSocket::receive                                                                                                                       Receiving at:9999                                 
+15:49:5.2        CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 9999
+Remote Port:32878
+15:49:5.7        CLSocket::receive                                                                                                                       Finished receiving at:9999                        
+15:49:5.15       AbstractConnection       127.0.1.1:14016          127.0.1.1:9999           566     SYNACK  3203                             0           Processing packet.                                
+15:49:5.16       AbstractConnection       127.0.1.1:9999           127.0.1.1:10500          3204    ACK     566                              0           Sending Ack: 566                                  
+15:49:5.19       NETWORK                                                                                                                                 Packet 3204 send!                                 

@@ -1,0 +1,10 @@
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Timestamp        Logging Entity           Source                   Destination              Seq No  Flag    Ack No  Start Payload            Checksum    Comment                                           
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+12:3:36.226      SendTimer                127.0.1.1:7777           127.0.0.1:10500          5535    SYN     -1                               0           Sending this datagram (try: 1)                    
+12:3:36.293      NETWORK                                                                                                                                 Packet 5535 send!                                 
+12:3:36.303      AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+12:3:36.319      CLSocket::receive                                                                                                                       Receiving at:7777                                 
+12:3:36.321      InternalReceiever                                                                                                                       Exception while receiving: Address already in use 

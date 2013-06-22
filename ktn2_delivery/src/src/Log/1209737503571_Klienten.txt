@@ -1,0 +1,15 @@
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Timestamp        Logging Entity           Source                   Destination              Seq No  Flag    Ack No  Start Payload            Checksum    Comment                                           
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16:11:44.460     SendTimer                127.0.1.1:9987           127.0.0.1:10500          6976    SYN     -1                               0           Sending this datagram (try: 1)                    
+16:11:44.475     NETWORK                                                                                                                                 Packet 6976 send!                                 
+16:11:44.484     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+16:11:44.488     CLSocket::receive                                                                                                                       Receiving at:9987                                 
+16:11:44.489     InternalReceiever                                                                                                                       Exception while receiving: Address already in use 
+16:12:50.622     SendTimer                127.0.1.1:9987           127.0.0.1:10500          6977            -1      default: lkjlkj          1093830928  Sending this datagram (try: 1)                    
+16:12:50.626     NETWORK                                                                                                                                 Packet 6977 send!                                 
+16:12:50.626     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+16:12:50.629     CLSocket::receive                                                                                                                       Receiving at:9987                                 
+16:12:50.629     InternalReceiever                                                                                                                       Exception while receiving: Address already in use 

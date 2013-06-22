@@ -1,0 +1,235 @@
+
+/*
+ * Created on Oct 27, 2004
+ *
+ */
+package no.ntnu.fp.net.co;
+
+import java.io.IOException;
+import java.net.ConnectException;
+import java.net.InetAddress;
+import java.net.SocketTimeoutException;
+import java.net.UnknownHostException;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+import java.util.Random;
+import java.util.Timer;
+
+import sun.reflect.generics.reflectiveObjects.NotImplementedException;
+
+import no.ntnu.fp.net.admin.Log;
+import no.ntnu.fp.net.cl.ClException;
+import no.ntnu.fp.net.cl.ClSocket;
+import no.ntnu.fp.net.cl.KtnDatagram;
+
+/**
+ *
+ * Implementation of the Connection-interface.
+ * <br><br>
+ * This class implements the behaviour in the methods specified in the
+ * interface {@link Connection} over the unreliable, connectionless network
+ * realised in {@link ClSocket}. The base class, {@link AbstractConnection}
+ * implements some of the functionality, leaving message passing and error
+ * handling to this implementation.
+ *
+ * @author Sebj�rn Birkeland and Stein Jakob Nordb�
+ *
+ * @see no.ntnu.fp.net.co.Connection
+ * @see no.ntnu.fp.net.cl.ClSocket
+ */
+public class ConnectionImpl extends AbstractConnection {
+        
+        /** Keeps track of the used ports for each server port. */
+        private static Map usedPorts = Collections.synchronizedMap(new HashMap());
+        
+        private static Random generator = new Random();
+        
+        /**
+         * Initialise initial sequence number and setup state machine.
+         *
+         * @param myPort - the local port to associate with this connection
+         */
+        public ConnectionImpl(int myPort) {
+                super();
+                
+                try{
+                        this.myPort = myPort;
+                        usedPorts.put(new Integer(myPort), new Boolean(true));
+                        
+                        this.myAddress = InetAddress.getLocalHost().getHostAddress();
+                }catch(UnknownHostException e){
+                        System.out.println(e.getMessage());
+                }
+                //throw new NotImplementedException();
+        }
+        
+        
+        /**
+         * Establish a connection to a remote location.
+         *
+         * @param remoteAddress - the remote IP-address to connect to
+         * @param remotePort - the remote portnumber to connect to
+         *
+         * @throws IOException If connection could not be made.
+         *
+         * @see AbstractConnection#sendPacket(KtnDatagram)
+         */
+        public void connect(InetAddress remoteAddress, int remotePort)
+        throws IOException, SocketTimeoutException {
+                
+                //Store/set properties of the remote host
+                this.remoteAddress = remoteAddress.getHostAddress();
+                this.remotePort = remotePort;
+                
+                //Create a syn packate and send it to remote host
+                KtnDatagram syn = constructPacket(KtnDatagram.SYN, null);               
+                lastPacketSent = syn;
+                Timer timer = new Timer();
+                timer.scheduleAtFixedRate(new SendTimer(new ClSocket(), this.remoteAddress, syn), 0, RETRANSMIT);
+                this.state = SYN_SENT;
+                
+                //Wait for the acknowledgement and restransmit syn packet after RETRANSMIT miliseconds
+                KtnDatagram syn_ack = receiveAck();
+                timer.cancel();
+                
+                //Store port for the new negotiated conncetion
+                int newRemotePort = syn_ack.getSrc_port();
+                
+                //syn = constructPacket(KtnDatagram.ACK, null);
+                sendAck(syn_ack, KtnDatagram.ACK);
+                
+                this.remotePort = newRemotePort;
+                this.state = ESTABLISHED;
+                
+                
+                //throw new NotImplementedException();
+        }
+        
+        /**
+         * Listen for, and accept, incoming connections.
+         *
+         * @return A new ConnectionImpl-object representing the new connection.
+         */
+        public Connection accept() throws IOException, SocketTimeoutException {
+                
+                int newPort;
+                
+                //Transition to state Listen
+                this.state = LISTEN;
+                
+                //Blocked infinitely til a SYN packet is received
+                KtnDatagram syn = this.doReceive(true);
+                
+                //Store port and adress of the source
+                int remotePort = syn.getSrc_port();
+                String remoteAddress = syn.getSrc_addr();
+                
+                //Transition to state SYN_Received
+                this.state = SYN_RCVD;
+                
+                //New port negotiation
+                newPort = this.getAvailablePort();
+                usedPorts.put(new Integer(newPort), new Boolean(true));
+                
+                //Dest_port of the packet received will be src port once we call sendAck
+                //We can add the new port here modifyng the packet just received, and send the SYN_ACK
+                syn.setDest_port(newPort);
+                sendAck(syn, KtnDatagram.SYN_ACK);
+                
+                KtnDatagram ack = doReceive(true);
+                
+                //Return connection with new negotiated port
+                Connection newConection = new ConnectionImpl(newPort);
+                
+                
+                //Set properties of the new connection
+                ((ConnectionImpl)newConection).state = ESTABLISHED;
+                ((ConnectionImpl)newConection).remotePort = remotePort;
+                ((ConnectionImpl)newConection).remoteAddress = remoteAddress;
+                
+                this.state = CLOSED;
+                
+                return newConection;
+                //throw new NotImplementedException();
+        }
+        
+        /**
+         * Send a message from the application.
+         *
+         * @param msg - the String to be sent.
+         *
+         * @throws ConnectException If no connection could be made.
+         * @throws IOException If no ACK was received.
+         *
+         * @see AbstractConnection#sendPacket(KtnDatagram)
+         * @see no.ntnu.fp.net.co.Connection#send(String)
+         */
+        public void send(String msg) throws ConnectException, IOException {
+                
+                KtnDatagram packet = constructPacket(-1, msg);
+                sendPacket(packet);
+                //throw new NotImplementedException();
+        }
+        
+        /**
+         * Wait for incoming data.
+         *
+         * @return The received data's payload as a String.
+         *
+         * @see ConnectionImpl#doReceive
+         */
+        public String receive() throws ConnectException, IOException {
+                
+                KtnDatagram packet = doReceive(false);
+                if (packet.getPayload() instanceof String) {
+                        return (String) packet.getPayload();
+                } else {
+                        return packet.getPayload().toString();
+                }
+                        
+                //throw new NotImplementedException(); 
+        }
+        
+        /**
+         * Close the connection.
+         *
+         * @see ConnectionImpl#doClose
+         */
+        public void close() throws IOException {
+                
+                throw new NotImplementedException();
+        }
+        
+        /**
+         * Test a packet for transmission errors. This function is only called in
+         * the ESTABLISHED state.
+         *
+         * @param packet Packet to test.
+         * @return true if packet is free of errors, false otherwise.
+         */
+        protected boolean isValid(KtnDatagram packet) {
+                
+                throw new NotImplementedException();
+        }
+        
+        /**
+         * Returns an available port between 1025 and 65535
+         *
+         * @return available port
+         */
+        
+        private int getAvailablePort() {
+                int portAux;
+                
+                do
+                {
+                        portAux = generator.nextInt(65535 - 1024) + 1024;
+                }while(usedPorts.containsKey(new Integer(portAux)));
+                
+                return portAux;
+        }
+        
+}

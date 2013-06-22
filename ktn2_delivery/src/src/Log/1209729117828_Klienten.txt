@@ -1,0 +1,21 @@
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Timestamp        Logging Entity           Source                   Destination              Seq No  Flag    Ack No  Start Payload            Checksum    Comment                                           
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+13:52:2.438      AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+13:52:2.439      SendTimer                127.0.1.1:5555           127.0.0.1:10500          3829    SYN     -1                               0           Sending this datagram (try: 1)                    
+13:52:2.475      CLSocket::receive                                                                                                                       Receiving at:5555                                 
+13:52:2.491      SendTimer                                                                                                                               ERROR: Could not establish a connection to 127.0.0.1:10500
+13:52:3.238      SendTimer                127.0.1.1:5555           127.0.0.1:10500          3829    SYN     -1                               0           Sending this datagram (try: 2)                    
+13:52:3.240      SendTimer                                                                                                                               ERROR: Could not establish a connection to 127.0.0.1:10500
+13:52:4.38       SendTimer                127.0.1.1:5555           127.0.0.1:10500          3829    SYN     -1                               0           Sending this datagram (try: 3)                    
+13:52:4.40       SendTimer                                                                                                                               ERROR: Could not establish a connection to 127.0.0.1:10500
+13:52:4.838      SendTimer                127.0.1.1:5555           127.0.0.1:10500          3829    SYN     -1                               0           Sending this datagram (try: 4)                    
+13:52:4.840      SendTimer                                                                                                                               ERROR: Could not establish a connection to 127.0.0.1:10500
+13:52:5.638      SendTimer                127.0.1.1:5555           127.0.0.1:10500          3829    SYN     -1                               0           Sending this datagram (try: 5)                    
+13:52:5.641      SendTimer                                                                                                                               ERROR: Could not establish a connection to 127.0.0.1:10500
+13:52:6.438      SendTimer                127.0.1.1:5555           127.0.0.1:10500          3829    SYN     -1                               0           Sending this datagram (try: 6)                    
+13:52:6.441      SendTimer                                                                                                                               ERROR: Could not establish a connection to 127.0.0.1:10500
+13:52:7.238      SendTimer                127.0.1.1:5555           127.0.0.1:10500          3829    SYN     -1                               0           Sending this datagram (try: 7)                    
+13:52:7.241      SendTimer                                                                                                                               ERROR: Could not establish a connection to 127.0.0.1:10500

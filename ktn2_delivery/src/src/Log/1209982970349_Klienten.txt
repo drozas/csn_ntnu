@@ -1,0 +1,288 @@
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Timestamp        Logging Entity           Source                   Destination              Seq No  Flag    Ack No  Start Payload            Checksum    Comment                                           
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+12:22:51.304     SendTimer                127.0.1.1:7777           127.0.0.1:10500          5440    SYN     -1                               0           Sending this datagram (try: 1)                    
+12:22:51.311     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+12:22:51.328     NETWORK                                                                                                                                 Packet 5440 send!                                 
+12:22:51.341     CLSocket::receive                                                                                                                       Receiving at:7777                                 
+12:22:51.384     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 7777
+Remote Port:53280
+12:22:51.388     CLSocket::receive                                                                                                                       Finished receiving at:7777                        
+12:22:51.389     AbstractConnection       127.0.1.1:36514          127.0.1.1:7777           177     SYNACK  5440                             0           Processing packet.                                
+12:22:51.389     AbstractConnection       127.0.1.1:7777           127.0.1.1:10500          5441    ACK     177                              0           Sending Ack: 177                                  
+12:22:51.394     NETWORK                                                                                                                                 Packet 5441 send!                                 
+12:22:51.480     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+12:22:51.482     SendTimer                127.0.1.1:7777           127.0.0.1:36514          5442            -1      Hello:default            215245029   Sending this datagram (try: 1)                    
+12:22:51.484     NETWORK                                                                                                                                 Packet 5442 send!                                 
+12:22:51.494     CLSocket::receive                                                                                                                       Receiving at:7777                                 
+12:22:51.494     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+12:22:51.495     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 7777
+Remote Port:53283
+12:22:51.496     CLSocket::receive                                                                                                                       Finished receiving at:7777                        
+12:22:51.501     AbstractConnection       127.0.1.1:36514          127.0.1.1:7777           3543    ACK     5442                             0           Processing packet.                                
+12:22:51.502     AbstractConnection       127.0.1.1:36514          127.0.1.1:7777           3543    ACK     5442                             0           Received Ack for sequence number: 5442            
+12:22:51.505     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+12:22:51.505     CLSocket::receive                                                                                                                       Receiving at:7777                                 
+12:22:51.506     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+12:22:51.509     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 7777
+Remote Port:53284
+12:22:51.512     CLSocket::receive                                                                                                                       Finished receiving at:7777                        
+12:22:51.512     AbstractConnection       127.0.1.1:36514          127.0.1.1:7777           3544            -1      *: default joined.       237488121   Processing packet.                                
+12:22:51.513     AbstractConnection       127.0.1.1:7777           127.0.1.1:36514          5443    ACK     3544                             0           Sending Ack: 3544                                 
+12:22:51.514     NETWORK                                                                                                                                 Packet 5443 send!                                 
+12:22:51.514     AbstractConnection       127.0.1.1:36514          127.0.1.1:7777           3544            -1      *: default joined.       237488121   Packet successfully received.                     
+12:22:51.519     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+12:22:51.520     CLSocket::receive                                                                                                                       Receiving at:7777                                 
+12:22:51.520     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+12:22:51.552     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 7777
+Remote Port:53286
+12:22:51.556     CLSocket::receive                                                                                                                       Finished receiving at:7777                        
+12:22:51.556     AbstractConnection       127.0.1.1:36514          127.0.1.1:7777           3545            -1      [default]                1927854161  Processing packet.                                
+12:22:51.556     AbstractConnection       127.0.1.1:7777           127.0.1.1:36514          5444    ACK     3545                             0           Sending Ack: 3545                                 
+12:22:51.558     NETWORK                                                                                                                                 Packet 5444 send!                                 
+12:22:51.558     AbstractConnection       127.0.1.1:36514          127.0.1.1:7777           3545            -1      [default]                1927854161  Packet successfully received.                     
+12:22:51.559     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+12:22:51.559     CLSocket::receive                                                                                                                       Receiving at:7777                                 
+12:22:51.559     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+12:23:16.110     SendTimer                127.0.1.1:7777           127.0.0.1:36514          5445            -1      default: hola            3560404403  Sending this datagram (try: 1)                    
+12:23:16.114     NETWORK                                                                                                                                 Packet 5445 send!                                 
+12:23:16.118     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 7777
+Remote Port:53290
+12:23:16.120     CLSocket::receive                                                                                                                       Finished receiving at:7777                        
+12:23:16.121     AbstractConnection       127.0.1.1:36514          127.0.1.1:7777           3546    ACK     5445                             0           Processing packet.                                
+12:23:16.121     AbstractConnection       127.0.1.1:36514          127.0.1.1:7777           3546    ACK     5445                             0           Received Ack for sequence number: 5445            
+12:23:16.122     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+12:23:16.122     CLSocket::receive                                                                                                                       Receiving at:7777                                 
+12:23:16.122     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+12:23:16.124     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 7777
+Remote Port:53291
+12:23:16.127     CLSocket::receive                                                                                                                       Finished receiving at:7777                        
+12:23:16.127     AbstractConnection       127.0.1.1:36514          127.0.1.1:7777           3547            -1      default: hola            3560404403  Processing packet.                                
+12:23:16.158     AbstractConnection       127.0.1.1:7777           127.0.1.1:36514          5446    ACK     3547                             0           Sending Ack: 3547                                 
+12:23:16.161     NETWORK                                                                                                                                 Packet 5446 send!                                 
+12:23:16.162     AbstractConnection       127.0.1.1:36514          127.0.1.1:7777           3547            -1      default: hola            3560404403  Packet successfully received.                     
+12:23:16.163     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+12:23:16.163     CLSocket::receive                                                                                                                       Receiving at:7777                                 
+12:23:16.164     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+12:23:27.835     SendTimer                127.0.1.1:7777           127.0.0.1:36514          5447            -1      default: kkkk            1847528792  Sending this datagram (try: 1)                    
+12:23:27.838     NETWORK                                                                                                                                 Packet 5447 send!                                 
+12:23:27.844     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 7777
+Remote Port:53295
+12:23:27.846     CLSocket::receive                                                                                                                       Finished receiving at:7777                        
+12:23:27.846     AbstractConnection       127.0.1.1:36514          127.0.1.1:7777           3548    ACK     5447                             0           Processing packet.                                
+12:23:27.847     AbstractConnection       127.0.1.1:36514          127.0.1.1:7777           3548    ACK     5447                             0           Received Ack for sequence number: 5447            
+12:23:27.847     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+12:23:27.848     CLSocket::receive                                                                                                                       Receiving at:7777                                 
+12:23:27.856     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+12:23:27.860     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 7777
+Remote Port:53296
+12:23:27.862     CLSocket::receive                                                                                                                       Finished receiving at:7777                        
+12:23:27.863     AbstractConnection       127.0.1.1:36514          127.0.1.1:7777           3549            -1      default: kkkk            1847528792  Processing packet.                                
+12:23:27.863     AbstractConnection       127.0.1.1:7777           127.0.1.1:36514          5448    ACK     3549                             0           Sending Ack: 3549                                 
+12:23:27.866     NETWORK                                                                                                                                 Packet 5448 send!                                 
+12:23:27.866     AbstractConnection       127.0.1.1:36514          127.0.1.1:7777           3549            -1      default: kkkk            1847528792  Packet successfully received.                     
+12:23:27.873     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+12:23:27.873     CLSocket::receive                                                                                                                       Receiving at:7777                                 
+12:23:27.874     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+12:23:29.663     SendTimer                127.0.1.1:7777           127.0.0.1:36514          5449            -1      default: sdfgdfgdsfg     844586599   Sending this datagram (try: 1)                    
+12:23:29.666     NETWORK                                                                                                                                 Packet 5449 send!                                 
+12:23:29.673     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 7777
+Remote Port:53299
+12:23:29.681     CLSocket::receive                                                                                                                       Finished receiving at:7777                        
+12:23:29.681     AbstractConnection       127.0.1.1:36514          127.0.1.1:7777           3550    ACK     5449                             0           Processing packet.                                
+12:23:29.681     AbstractConnection       127.0.1.1:36514          127.0.1.1:7777           3550    ACK     5449                             0           Received Ack for sequence number: 5449            
+12:23:29.682     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+12:23:29.682     CLSocket::receive                                                                                                                       Receiving at:7777                                 
+12:23:29.683     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+12:23:29.683     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 7777
+Remote Port:53300
+12:23:29.689     CLSocket::receive                                                                                                                       Finished receiving at:7777                        
+12:23:29.689     AbstractConnection       127.0.1.1:36514          127.0.1.1:7777           3551            -1      default: sdfgdfgdsfg     844586599   Processing packet.                                
+12:23:29.690     AbstractConnection       127.0.1.1:7777           127.0.1.1:36514          5450    ACK     3551                             0           Sending Ack: 3551                                 
+12:23:29.696     NETWORK                                                                                                                                 Packet 5450 send!                                 
+12:23:29.697     AbstractConnection       127.0.1.1:36514          127.0.1.1:7777           3551            -1      default: sdfgdfgdsfg     844586599   Packet successfully received.                     
+12:23:29.698     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+12:23:29.698     CLSocket::receive                                                                                                                       Receiving at:7777                                 
+12:23:29.699     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+12:23:31.719     SendTimer                127.0.1.1:7777           127.0.0.1:36514          5451            -1      default: sdgdfgfd        4094041366  Sending this datagram (try: 1)                    
+12:23:31.722     NETWORK                                                                                                                                 Packet 5451 send!                                 
+12:23:31.732     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 7777
+Remote Port:53303
+12:23:31.734     CLSocket::receive                                                                                                                       Finished receiving at:7777                        
+12:23:31.734     AbstractConnection       127.0.1.1:36514          127.0.1.1:7777           3552    ACK     5451                             0           Processing packet.                                
+12:23:31.734     AbstractConnection       127.0.1.1:36514          127.0.1.1:7777           3552    ACK     5451                             0           Received Ack for sequence number: 5451            
+12:23:31.735     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+12:23:31.735     CLSocket::receive                                                                                                                       Receiving at:7777                                 
+12:23:31.736     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+12:23:31.736     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 7777
+Remote Port:53304
+12:23:31.738     CLSocket::receive                                                                                                                       Finished receiving at:7777                        
+12:23:31.739     AbstractConnection       127.0.1.1:36514          127.0.1.1:7777           3553            -1      default: sdgdfgfd        4094041366  Processing packet.                                
+12:23:31.739     AbstractConnection       127.0.1.1:7777           127.0.1.1:36514          5452    ACK     3553                             0           Sending Ack: 3553                                 
+12:23:31.742     NETWORK                                                                                                                                 Packet 5452 send!                                 
+12:23:31.746     AbstractConnection       127.0.1.1:36514          127.0.1.1:7777           3553            -1      default: sdgdfgfd        4094041366  Packet successfully received.                     
+12:23:31.747     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+12:23:31.747     CLSocket::receive                                                                                                                       Receiving at:7777                                 
+12:23:31.748     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+12:23:33.603     SendTimer                127.0.1.1:7777           127.0.0.1:36514          5453            -1      default: sdgsdgdfgsdg    1869511866  Sending this datagram (try: 1)                    
+12:23:33.606     NETWORK                                                                                                                                 Packet 5453 send!                                 
+12:23:33.613     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 7777
+Remote Port:53307
+12:23:33.614     CLSocket::receive                                                                                                                       Finished receiving at:7777                        
+12:23:33.615     AbstractConnection       127.0.1.1:36514          127.0.1.1:7777           3554    ACK     5453                             0           Processing packet.                                
+12:23:33.615     AbstractConnection       127.0.1.1:36514          127.0.1.1:7777           3554    ACK     5453                             0           Received Ack for sequence number: 5453            
+12:23:33.616     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+12:23:33.616     CLSocket::receive                                                                                                                       Receiving at:7777                                 
+12:23:33.616     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+12:23:33.620     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 7777
+Remote Port:53308
+12:23:33.623     CLSocket::receive                                                                                                                       Finished receiving at:7777                        
+12:23:33.624     AbstractConnection       127.0.1.1:36514          127.0.1.1:7777           3555            -1      default: sdgsdgdfgsdg    1869511866  Processing packet.                                
+12:23:33.624     AbstractConnection       127.0.1.1:7777           127.0.1.1:36514          5454    ACK     3555                             0           Sending Ack: 3555                                 
+12:23:33.627     NETWORK                                                                                                                                 Packet 5454 send!                                 
+12:23:33.627     AbstractConnection       127.0.1.1:36514          127.0.1.1:7777           3555            -1      default: sdgsdgdfgsdg    1869511866  Packet successfully received.                     
+12:23:33.628     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+12:23:33.629     CLSocket::receive                                                                                                                       Receiving at:7777                                 
+12:23:33.629     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+12:23:35.245     SendTimer                127.0.1.1:7777           127.0.0.1:36514          5455            -1      default: dgdfgdsfgdsfg   1654798990  Sending this datagram (try: 1)                    
+12:23:35.248     NETWORK                                                                                                                                 Packet 5455 send!                                 
+12:23:35.253     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 7777
+Remote Port:53311
+12:23:35.259     CLSocket::receive                                                                                                                       Finished receiving at:7777                        
+12:23:35.259     AbstractConnection       127.0.1.1:36514          127.0.1.1:7777           3556    ACK     5455                             0           Processing packet.                                
+12:23:35.260     AbstractConnection       127.0.1.1:36514          127.0.1.1:7777           3556    ACK     5455                             0           Received Ack for sequence number: 5455            
+12:23:35.260     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+12:23:35.261     CLSocket::receive                                                                                                                       Receiving at:7777                                 
+12:23:35.261     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+12:23:35.268     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 7777
+Remote Port:53312
+12:23:35.272     CLSocket::receive                                                                                                                       Finished receiving at:7777                        
+12:23:35.273     AbstractConnection       127.0.1.1:36514          127.0.1.1:7777           3557            -1      default: dgdfgdsfgdsfg   1654798990  Processing packet.                                
+12:23:35.273     AbstractConnection       127.0.1.1:7777           127.0.1.1:36514          5456    ACK     3557                             0           Sending Ack: 3557                                 
+12:23:35.275     NETWORK                                                                                                                                 Packet 5456 send!                                 
+12:23:35.276     AbstractConnection       127.0.1.1:36514          127.0.1.1:7777           3557            -1      default: dgdfgdsfgdsfg   1654798990  Packet successfully received.                     
+12:23:35.277     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+12:23:35.277     CLSocket::receive                                                                                                                       Receiving at:7777                                 
+12:23:35.278     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+12:23:36.940     SendTimer                127.0.1.1:7777           127.0.0.1:36514          5457            -1      default: sdgsdfgdsfgsdg  982150743   Sending this datagram (try: 1)                    
+12:23:36.943     NETWORK                                                                                                                                 Packet 5457 send!                                 
+12:23:36.947     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 7777
+Remote Port:53315
+12:23:36.949     CLSocket::receive                                                                                                                       Finished receiving at:7777                        
+12:23:36.949     AbstractConnection       127.0.1.1:36514          127.0.1.1:7777           3558    ACK     5457                             0           Processing packet.                                
+12:23:36.950     AbstractConnection       127.0.1.1:36514          127.0.1.1:7777           3558    ACK     5457                             0           Received Ack for sequence number: 5457            
+12:23:36.950     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+12:23:36.950     CLSocket::receive                                                                                                                       Receiving at:7777                                 
+12:23:36.951     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+12:23:36.954     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 7777
+Remote Port:53316
+12:23:36.958     CLSocket::receive                                                                                                                       Finished receiving at:7777                        
+12:23:36.959     AbstractConnection       127.0.1.1:36514          127.0.1.1:7777           3559            -1      default: sdgsdfgdsfgsdg  982150743   Processing packet.                                
+12:23:36.959     AbstractConnection       127.0.1.1:7777           127.0.1.1:36514          5458    ACK     3559                             0           Sending Ack: 3559                                 
+12:23:36.965     NETWORK                                                                                                                                 Packet 5458 send!                                 
+12:23:36.970     AbstractConnection       127.0.1.1:36514          127.0.1.1:7777           3559            -1      default: sdgsdfgdsfgsdg  982150743   Packet successfully received.                     
+12:23:36.971     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+12:23:36.972     CLSocket::receive                                                                                                                       Receiving at:7777                                 
+12:23:36.972     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+12:23:38.967     SendTimer                127.0.1.1:7777           127.0.0.1:36514          5459            -1      default: sdgsdfgdsfg     3722278389  Sending this datagram (try: 1)                    
+12:23:38.973     NETWORK                                                                                                                                 Packet 5459 send!                                 
+12:23:38.977     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 7777
+Remote Port:53319
+12:23:38.978     CLSocket::receive                                                                                                                       Finished receiving at:7777                        
+12:23:38.979     AbstractConnection       127.0.1.1:36514          127.0.1.1:7777           3560    ACK     5459                             0           Processing packet.                                
+12:23:38.979     AbstractConnection       127.0.1.1:36514          127.0.1.1:7777           3560    ACK     5459                             0           Received Ack for sequence number: 5459            
+12:23:38.980     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+12:23:38.980     CLSocket::receive                                                                                                                       Receiving at:7777                                 
+12:23:38.980     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+12:23:38.983     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 7777
+Remote Port:53320
+12:23:38.984     CLSocket::receive                                                                                                                       Finished receiving at:7777                        
+12:23:38.985     AbstractConnection       127.0.1.1:36514          127.0.1.1:7777           3561            -1      default: sdgsdfgdsfg     3722278389  Processing packet.                                
+12:23:38.985     AbstractConnection       127.0.1.1:7777           127.0.1.1:36514          5460    ACK     3561                             0           Sending Ack: 3561                                 
+12:23:38.990     NETWORK                                                                                                                                 Packet 5460 send!                                 
+12:23:38.990     AbstractConnection       127.0.1.1:36514          127.0.1.1:7777           3561            -1      default: sdgsdfgdsfg     3722278389  Packet successfully received.                     
+12:23:38.991     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+12:23:38.992     CLSocket::receive                                                                                                                       Receiving at:7777                                 
+12:23:38.992     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        

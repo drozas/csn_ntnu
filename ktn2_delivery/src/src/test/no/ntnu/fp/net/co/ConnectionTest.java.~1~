@@ -1,0 +1,47 @@
+package test.no.ntnu.fp.net.co;
+
+import static org.junit.Assert.*;
+
+import no.ntnu.fp.net.co.Connection;
+
+import org.junit.Test;
+
+public class ConnectionTest {
+
+	Connection client;
+	Connection server;
+	
+	@Test
+	public void testConnect() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testAccept() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testSend() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testReceive() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testClose() {
+		fail("Not yet implemented");
+	}
+	
+	@Test
+	public void sucessfullTest()
+	{
+		int a = 2 + 2;
+		assertEquals(a, 4);	
+		
+	}
+
+}

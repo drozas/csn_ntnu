@@ -1,0 +1,33 @@
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Timestamp        Logging Entity           Source                   Destination              Seq No  Flag    Ack No  Start Payload            Checksum    Comment                                           
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+15:47:16.733     SendTimer                127.0.1.1:9999           127.0.0.1:10500          3708    SYN     -1                               0           Sending this datagram (try: 1)                    
+15:47:16.797     NETWORK                                                                                                                                 Packet 3708 send!                                 
+15:47:16.798     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:47:16.800     CLSocket::receive                                                                                                                       Receiving at:9999                                 
+15:47:16.814     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 9999
+Remote Port:44696
+15:47:16.829     CLSocket::receive                                                                                                                       Finished receiving at:9999                        
+15:47:16.833     AbstractConnection       127.0.1.1:11874          127.0.1.1:9999           565     SYNACK  3708                             0           Processing packet.                                
+15:47:16.834     AbstractConnection       127.0.1.1:9999           127.0.1.1:10500          3709    ACK     565                              0           Sending Ack: 565                                  
+15:47:16.838     NETWORK                                                                                                                                 Packet 3709 send!                                 
+15:47:45.169     SendTimer                127.0.1.1:9999           127.0.0.1:11874          3710            -1      Hello:default            215245029   Sending this datagram (try: 1)                    
+15:47:45.172     NETWORK                                                                                                                                 Packet 3710 send!                                 
+15:47:45.183     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+15:47:45.207     CLSocket::receive                                                                                                                       Receiving at:9999                                 
+15:47:45.208     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+15:47:45.208     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 9999
+Remote Port:32848
+15:47:45.210     CLSocket::receive                                                                                                                       Finished receiving at:9999                        
+15:47:45.211     AbstractConnection       127.0.1.1:11874          127.0.1.1:9999           6133    ACK     3710                             0           Processing packet.                                
+15:47:45.219     AbstractConnection       127.0.1.1:11874          127.0.1.1:9999           6133    ACK     3710                             0           Received Ack for sequence number: 3710            

@@ -1,0 +1,6 @@
+This file contains the project for the course TTM4100, consisting of:
+- src: whole source code. The protocol is implemented in ConnectionImplementation, but we have decided to include the whole code because we add/modify some of the files in order to test during development stage (ex.: change the chat client to take a parameter from the prompt which is the number of the port, in order to be able to run many of them easily).
+- doc: changes to the previous documentation. The changes performed are summarized in the introduction.
+- test: We used the bundled client and server for testing since we had problems using JUnit on the code. The code related to the attempt to use JUnit is provided anyway.
+	We tested the system with no errors, 10% and 50% in each of the error cathegories. We also ran tests on everyone at 10% and everything on 50%. In order to test how it will run on a mobile phone behind a NAT (like most phones are) another scenario is: package loss 30%, package delayed 60%, error payload 40% and error header 28%.We also tested everything on 80% as a  worst case scenario to see if our implementation could take a beating.
+We design our protocol to raise an ConnectException when the network has achieved a big amount of mistakes, so in some of the cases this exception can be raised. This is supposed to be catched by the application.

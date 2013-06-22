@@ -1,0 +1,101 @@
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Timestamp        Logging Entity           Source                   Destination              Seq No  Flag    Ack No  Start Payload            Checksum    Comment                                           
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+11:53:53.121     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+11:53:53.122     SendTimer                127.0.1.1:7777           127.0.0.1:10500          7823    SYN     -1                               0           Sending this datagram (try: 1)                    
+11:53:53.124     CLSocket::receive                                                                                                                       Receiving at:7777                                 
+11:53:53.165     NETWORK                                                                                                                                 Packet 7823 send!                                 
+11:53:53.221     CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 7777
+Remote Port:48037
+11:53:53.235     CLSocket::receive                                                                                                                       Finished receiving at:7777                        
+11:53:53.246     AbstractConnection       127.0.1.1:49489          127.0.1.1:7777           2534    SYNACK  7823                             0           Processing packet.                                
+11:53:53.246     AbstractConnection       127.0.1.1:7777           127.0.1.1:10500          7824    ACK     2534                             0           Sending Ack: 2534                                 
+11:53:53.251     NETWORK                                                                                                                                 Packet 7824 send!                                 
+11:53:53.294     SendTimer                127.0.1.1:7777           127.0.0.1:49489          7825            -1      Hello:default            215245029   Sending this datagram (try: 1)                    
+11:53:53.294     NETWORK                  127.0.1.1:7777           127.0.0.1:49489          7825            -1      Hello:default            215245029   Datagram was lost                                 
+11:53:53.296     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+11:53:53.313     CLSocket::receive                                                                                                                       Receiving at:7777                                 
+11:53:53.313     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+11:53:54.94      SendTimer                127.0.1.1:7777           127.0.0.1:49489          7825            -1      Hello:default            215245029   Sending this datagram (try: 2)                    
+11:53:54.102     NETWORK                  127.0.1.1:7777           127.0.0.1:49489          7825            -1      Hello:default            215245029   Datagram was lost                                 
+11:53:54.895     SendTimer                127.0.1.1:7777           127.0.0.1:49489          7825            -1      Hello:default            215245029   Sending this datagram (try: 3)                    
+11:53:54.895     NETWORK                  127.0.1.1:7777           127.0.0.1:49489          7825            -1      Hello:default            215245029   Datagram was lost                                 
+11:53:55.694     SendTimer                127.0.1.1:7777           127.0.0.1:49489          7825            -1      Hello:default            215245029   Sending this datagram (try: 4)                    
+11:53:55.695     NETWORK                  127.0.1.1:7777           127.0.0.1:49489          7825            -1      Hello:default            215245029   Datagram was lost                                 
+11:53:56.494     SendTimer                127.0.1.1:7777           127.0.0.1:49489          7825            -1      Hello:default            215245029   Sending this datagram (try: 5)                    
+11:53:56.495     NETWORK                  127.0.1.1:7777           127.0.0.1:49489          7825            -1      Hello:default            215245029   Datagram was lost                                 
+11:53:57.294     SendTimer                127.0.1.1:7777           127.0.0.1:49489          7825            -1      Hello:default            215245029   Sending this datagram (try: 6)                    
+11:53:57.295     NETWORK                  127.0.1.1:7777           127.0.0.1:49489          7825            -1      Hello:default            215245029   Datagram was lost                                 
+11:53:58.94      SendTimer                127.0.1.1:7777           127.0.0.1:49489          7825            -1      Hello:default            215245029   Sending this datagram (try: 7)                    
+11:53:58.95      NETWORK                  127.0.1.1:7777           127.0.0.1:49489          7825            -1      Hello:default            215245029   Datagram was lost                                 
+11:53:58.113     AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+11:53:58.117     CLSocket::receive                                                                                                                       Receiving at:7777                                 
+11:53:58.117     CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+11:53:58.122     SendTimer                127.0.1.1:7777           127.0.0.1:49489          7826            -1      default: hiola           972398257   Sending this datagram (try: 1)                    
+11:53:58.122     NETWORK                  127.0.1.1:7777           127.0.0.1:49489          7826            -1      default: hiola           972398257   Datagram was lost                                 
+11:53:58.913     SendTimer                127.0.1.1:7777           127.0.0.1:49489          7826            -1      default: hiola           972398257   Sending this datagram (try: 2)                    
+11:53:58.914     NETWORK                  127.0.1.1:7777           127.0.0.1:49489          7826            -1      default: hiola           972398257   Datagram was lost                                 
+11:53:59.714     SendTimer                127.0.1.1:7777           127.0.0.1:49489          7826            -1      default: hiola           972398257   Sending this datagram (try: 3)                    
+11:53:59.714     NETWORK                  127.0.1.1:7777           127.0.0.1:49489          7826            -1      default: hiola           972398257   Datagram was lost                                 
+11:54:0.513      SendTimer                127.0.1.1:7777           127.0.0.1:49489          7826            -1      default: hiola           972398257   Sending this datagram (try: 4)                    
+11:54:0.514      NETWORK                  127.0.1.1:7777           127.0.0.1:49489          7826            -1      default: hiola           972398257   Datagram was lost                                 
+11:54:1.313      SendTimer                127.0.1.1:7777           127.0.0.1:49489          7826            -1      default: hiola           972398257   Sending this datagram (try: 5)                    
+11:54:1.317      NETWORK                                                                                                                                 Packet 7826 send!                                 
+11:54:1.322      CLSocket::coReceive                                                                                                                     State of socket is:
+Bound:true
+Closed: false
+Connected: true
+Local Port: 7777
+Remote Port:48040
+11:54:1.328      CLSocket::receive                                                                                                                       Finished receiving at:7777                        
+11:54:1.332      AbstractConnection       127.0.1.1:49489          127.0.1.1:7777           3460    ACK     7826                             0           Processing packet.                                
+11:54:1.332      AbstractConnection       127.0.1.1:49489          127.0.1.1:7777           3460    ACK     7826                             0           Received Ack for sequence number: 7826            
+11:54:1.337      AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+11:54:1.337      SendTimer                127.0.1.1:7777           127.0.0.1:49489          7827            -1      default:                 2301438332  Sending this datagram (try: 1)                    
+11:54:1.338      CLSocket::receive                                                                                                                       Receiving at:7777                                 
+11:54:1.338      CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+11:54:1.343      NETWORK                                                                                                                                 Packet 7827 send!                                 
+11:54:2.137      SendTimer                127.0.1.1:7777           127.0.0.1:49489          7827            -1      default:                 2301438332  Sending this datagram (try: 2)                    
+11:54:2.138      NETWORK                  127.0.1.1:7777           127.0.0.1:49489          7827            -1      default:                 2301438332  Error in payload                                  
+11:54:2.140      NETWORK                                                                                                                                 Packet 7827 send!                                 
+11:54:2.936      SendTimer                127.0.1.1:7777           127.0.0.1:49489          7827            -1      default:                 2301438332  Sending this datagram (try: 3)                    
+11:54:2.937      NETWORK                  127.0.1.1:7777           127.0.0.1:49489          7827            -1      default:                 2301438332  Error in header                                   
+11:54:2.937      NETWORK                  127.0.1.1:7777           127.0.0.1:49489          7827            14376                            2301438332  ack was updated to 14376                          
+11:54:2.940      NETWORK                                                                                                                                 Packet 7827 send!                                 
+11:54:3.737      SendTimer                127.0.1.1:7777           127.0.0.1:49489          7827            -1      default:                 2301438332  Sending this datagram (try: 4)                    
+11:54:3.740      NETWORK                                                                                                                                 Packet 7827 send!                                 
+11:54:4.537      SendTimer                127.0.1.1:7777           127.0.0.1:49489          7827            -1      default:                 2301438332  Sending this datagram (try: 5)                    
+11:54:4.537      NETWORK                  127.0.1.1:7777           127.0.0.1:49489          7827            -1      default:                 2301438332  Datagram was lost                                 
+11:54:5.336      SendTimer                127.0.1.1:7777           127.0.0.1:49489          7827            -1      default:                 2301438332  Sending this datagram (try: 6)                    
+11:54:5.339      NETWORK                                                                                                                                 Packet 7827 send!                                 
+11:54:6.136      SendTimer                127.0.1.1:7777           127.0.0.1:49489          7827            -1      default:                 2301438332  Sending this datagram (try: 7)                    
+11:54:6.137      NETWORK                  127.0.1.1:7777           127.0.0.1:49489          7827            -1      default:                 2301438332  Datagram was duplicated                           
+11:54:6.140      NETWORK                                                                                                                                 Packet 7827 send!                                 
+11:54:6.143      NETWORK                                                                                                                                 Duplicate Packet 7827 send!                       
+11:54:6.149      AbstractConnection                                                                                                                      Waiting for incoming packet in doReceive()        
+11:54:6.150      SendTimer                127.0.1.1:7777           127.0.0.1:49489          7828            -1      default:                 2301438332  Sending this datagram (try: 1)                    
+11:54:6.151      NETWORK                  127.0.1.1:7777           127.0.0.1:49489          7828            -1      default:                 2301438332  Error in payload                                  
+11:54:6.151      CLSocket::receive                                                                                                                       Receiving at:7777                                 
+11:54:6.156      CLSocket::coAccept                                                                                                                      Fant gjenbrukbar innsocket                        
+11:54:6.158      NETWORK                                                                                                                                 Packet 7828 send!                                 
+11:54:6.950      SendTimer                127.0.1.1:7777           127.0.0.1:49489          7828            -1      default:                 2301438332  Sending this datagram (try: 2)                    
+11:54:6.951      NETWORK                  127.0.1.1:7777           127.0.0.1:49489          7828            -1      default:                 2301438332  Error in header                                   
+11:54:6.951      NETWORK                  127.0.1.1:7777           127.0.0.1:18664          7828            -1      default:                 2301438332  dest port was updated to 18664                    
+11:54:6.954      NETWORK                                                                                                                                 Packet 7828 send!                                 
+11:54:7.749      SendTimer                127.0.1.1:7777           127.0.0.1:49489          7828            -1      default:                 2301438332  Sending this datagram (try: 3)                    
+11:54:7.750      NETWORK                  127.0.1.1:7777           127.0.0.1:49489          7828            -1      default:                 2301438332  datagram was delayed 17877ms                      
+11:54:8.549      SendTimer                127.0.1.1:7777           127.0.0.1:49489          7828            -1      default:                 2301438332  Sending this datagram (try: 4)                    
+11:54:8.550      NETWORK                  127.0.1.1:7777           127.0.0.1:49489          7828            -1      default:                 2301438332  datagram was delayed 13135ms                      
+11:54:9.350      SendTimer                127.0.1.1:7777           127.0.0.1:49489          7828            -1      default:                 2301438332  Sending this datagram (try: 5)                    
+11:54:9.350      NETWORK                  127.0.1.1:7777           127.0.0.1:49489          7828            -1      default:                 2301438332  datagram was delayed 1336ms                       
+11:54:10.149     SendTimer                127.0.1.1:7777           127.0.0.1:49489          7828            -1      default:                 2301438332  Sending this datagram (try: 6)                    
+11:54:10.154     NETWORK                                                                                                                                 Packet 7828 send!                                 
+11:54:10.689     NETWORK                  127.0.1.1:7777           127.0.0.1:49489          7828            -1      default:                 2301438332   was sent after a delay                           
+11:54:10.949     SendTimer                127.0.1.1:7777           127.0.0.1:49489          7828            -1      default:                 2301438332  Sending this datagram (try: 7)                    
+11:54:10.950     NETWORK                  127.0.1.1:7777           127.0.0.1:49489          7828            -1      default:                 2301438332  Datagram was lost                                 
